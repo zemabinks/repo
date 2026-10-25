@@ -17,3 +17,44 @@ SHA1: 1015d57f218afdf977662448fdc7dba036e75f27
 SHA256: c2d14fea1cb4919fc6b40a57c58b084a4e2703fdedebec8ad2e4d2926120b914
 SHA512: cd61b4d8f6ef9f41e2da8a4b1230487b12d183b761c7ed7138c112f1ca1d5d81dc88ae8461718ebd178f6c513b7be1801b1b07bb802b89c81051652270d98384
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.88-1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: Build 88 candidate installer. Downloads the pinned ZGTA V IPA and installs it using your existing TrollStore helper. Requires compatible TrollStore or TrollStore Lite. Game files are supplied separately. Removing this installer does not delete the TrollStore app or its data.
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.88-1_all.deb
+Size: 2690
+MD5sum: 29529288d77a18074d52be2d75fa242f
+SHA1: eaa778b28231f7e5e32454ac88ce1653280fca0a
+SHA256: 3d68bce387c8f23facdcd3bbf9e1d0e54c26c7f9c2e5ed46506012754c898707
+SHA512: b930a140aa3e6076eda44bab1cfc056361f81b5f9a140e5188c5f5f078b7dbf7f9e8d3d1600bd7d65ebfe6f312e6535c1f3ee9ecb7a80ac69bb35d654824e949
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.88-1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: Experimental Build 88 fallback for compatible ARM64 rootful jailbreaks without TrollStore. Uses official AppSync Unified and appinst; add https://cydia.akemi.ai/ for dependencies. Not for RootHide or rootless. Actual app installation and gameplay on this route are untested. Own game files required; removing this wrapper leaves the app and data installed.
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.88-1_iphoneos-arm.deb
+Size: 2814
+MD5sum: 8c422d2872fac6e5c18f253ea775c07c
+SHA1: 8a9a3764190a2c9dc031725db5f248665af5b6bd
+SHA256: a8f63e12108b537d20cc442641b2b8c1513274a9169728d4cd535d0be5a158b7
+SHA512: 6b211db66e3e3d93ea660a634d4425680421d6a2242a59ba57bddb31e711de5ded76e772b3900c919dcc77eb98db8502fd3f455d85d0a25e6896f558990e5f61
+

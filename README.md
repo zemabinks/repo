@@ -14,7 +14,19 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 [Download the TrollStore IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-88/ZGTA-V-Build88-LobbyFavorites-TrollStore.ipa) · [Release notes](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-88)
 
-By **zema**. Pure Black launcher, fully clickable Home cards and separate Online / ♥ Favorites lobby views. Install with a compatible TrollStore setup and your own game files. This is an IPA download, not a Sileo `.deb` package. Install updates over the existing app and keep its data.
+By **zema**. Pure Black launcher, fully clickable Home cards and separate Online / ♥ Favorites lobby views. Your own game files are required. Keep the existing app and its data when updating.
+
+**Sileo test installers are now available:** refresh this source, then search for **ZGTA V**.
+
+| Your setup | Package | Requirements and status |
+| --- | --- | --- |
+| Existing compatible TrollStore / TrollStore Lite | **ZGTA V (TrollStore installer)** | Preferred route. Uses the existing helper; no AppSync dependency. Physical installation test pending. |
+| No TrollStore; compatible ARM64 rootful jailbreak | **ZGTA V (AppSync installer - experimental)** | iOS 15.0–18.2; official AppSync Unified and appinst dependencies. Not for RootHide or rootless. Device installation/gameplay untested. |
+| Neither supported method | No supported Sileo installer yet | Do not install arbitrary AppSync conversions. |
+
+[Installation and compatibility guide](docs/zgta-v-installation.md). Both wrappers download the exact IPA above, check its size/SHA-256, and wait for the native installer result. Removing a wrapper leaves the game and its data installed. They do not uninstall the game or force an installation-method migration.
+
+AppSync dependencies come from [Karen/あけみ’s official source](https://cydia.akemi.ai/) (add it separately in Sileo). That source timed out during checks on 2026-10-26, so fresh dependency downloads could not be verified. AppSync installations require an active compatible jailbreak; reboot persistence is not claimed.
 
 Simulator UI, 38 logic regressions and local ARM64 package checks pass. Physical iPhone acceptance and live two-device gameplay remain pending. This is a candidate prerelease, not a claim of compatibility with every jailbroken device.
 

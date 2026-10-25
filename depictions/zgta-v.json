@@ -1,0 +1,39 @@
+{
+  "minVersion": "0.1",
+  "tintColor": "#79b83b",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build 88 test candidate \u00b7 by zema.**",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Install this package in Sileo to download the exact verified IPA and pass it to your existing TrollStore or TrollStore Lite installer. It checks size and SHA-256 before installation.\n\nRequires a compatible TrollStore setup and your own game files. An existing non-TrollStore app with the same identifier is not forcibly overwritten.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Updates and removal\nTrollStore updates the existing app bundle. Keep the app and its game files/saves. Removing this installer package leaves the TrollStore app and its data in place; manage app removal in TrollStore.\n\n### Verification\n15 local installer tests (including AppSync fallback cases) and Debian archive checks pass. Actual Sileo \u2192 TrollStore installation on a phone is still pending. If installation fails, send the Sileo log. This package uses only TrollStore. A separate experimental AppSync package is available for compatible rootful jailbreaks; it is not needed on your TrollStore device.",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Installer 0.88-1\n- Initial Sileo \u2192 TrollStore candidate.\n- Pinned Build 88 download and integrity checks.\n- Native TrollStore install/custom interface; no force flag.\n- Installer removal preserves the app and data.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ],
+  "class": "DepictionTabView"
+}

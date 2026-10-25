@@ -1,0 +1,52 @@
+# ZGTA V Build 88 — installation test
+
+This is a **candidate**, by **zema**. It is not the audited public 2.0 release yet. Your own game files are required. These small `.deb` packages install the same pinned IPA; they do not contain the game files. Keep your existing game app, files and saves when updating.
+
+## Your iPhone already has TrollStore or TrollStore Lite
+
+1. Add `https://zemabinks.github.io/repo/` to Sileo, or refresh that source.
+2. Search for **ZGTA V (TrollStore installer)** and install it.
+3. Let the download and native installation finish. Open **ZGTA V** afterward.
+
+No AppSync package is needed for this route. It uses the helper from your installed TrollStore, verifies the exact IPA size and SHA-256, and waits for its result. It does not force a same-identifier app installed by another method to be overwritten. If the helper cannot execute from your bootstrap, installation stops with a Sileo error. Send that log; do not delete your game or reset data.
+
+Removing the small Sileo installer leaves the TrollStore-managed game and its data installed. Use TrollStore for actual app removal.
+
+## No supported TrollStore setup: AppSync candidate
+
+This optional route is **experimental**. It is restricted to ARM64 **rootful** jailbreaks, iOS **15.0–18.2**, with compatible official AppSync packages. It is **not** a RootHide or rootless AppSync conversion and is not a general solution for every jailbroken phone.
+
+1. Add the official AppSync source, `https://cydia.akemi.ai/`, in Sileo.
+2. In Zema's Repo, select **ZGTA V (AppSync installer - experimental)**.
+3. Review Sileo's dependency list. It requires `ai.akemi.appsyncunified` **116.0+** and `ai.akemi.appinst` **2.1.1+**, plus firmware, curl and coreutils. Let Sileo resolve/configure them; our script never launches a nested APT installation.
+4. Install the candidate, then test launching the app while the compatible jailbreak is active. Report the Sileo error if installation fails, or the app's actual launch result.
+
+The official dependency server timed out from the build Mac on **2026-10-26**. Fresh dependency downloads could not be verified. If Sileo cannot fetch them, installation remains blocked; this repository does not mirror third-party AppSync binaries or substitute unverified forks.
+
+The installer refuses an incompatible architecture/firmware, unconfigured or outdated dependencies, a bad download, and a detected TrollStore-managed copy. It calls the official `appinst <IPA>` interface and reports failure if appinst fails. Removing the wrapper leaves the app and its data in place. It does not remove apps, reset data, force a registration change or fall through to another installer.
+
+**Actual AppSync installation, launch, gameplay, upgrades and reboot behavior have not been tested.** The engine source has a smaller virtual-memory reservation fallback, but that does not prove the app has sufficient memory or works on a given AppSync setup. This route needs an active compatible jailbreak; no TrollStore-style reboot persistence is promised.
+
+## Manual download
+
+The [Build 88 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-88) also contains the IPA and checksum files. Download the IPA and open it in your compatible TrollStore. Installing either Sileo wrapper downloads exactly those same bytes.
+
+IPA size: **90,997,632 bytes**
+
+SHA-256: `4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d`
+
+## Verification and limits
+
+- Local native ARM64 package and Simulator UI/logic checks passed for Build 88.
+- Installer shell tests use isolated mock helpers; they do **not** prove device installation.
+- Debian archives contain only control metadata and a post-install script, with no app payload, uninstall scripts, game data or bundled native helpers.
+- Actual Sileo → TrollStore installation and physical-device acceptance remain pending. Live two-device gameplay, real updates and reboot behavior remain pending.
+- Installation method does not establish complete jailbreak/iOS/device compatibility.
+
+## Upstream interfaces checked
+
+- [TrollStore helper source](https://github.com/opa334/TrollStore/blob/88424f683b2a08f34a3f88985f790f97d84ce1df/RootHelper/main.m): `install custom <IPA>`; no force argument.
+- [Official appinst usage](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/README.md) and [dependency identifiers](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/control).
+- [AppSync firmware and architecture metadata](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/control). These upstream ranges do not constitute a ZGTA V device test.
+
+Installer source and local test cases are in `package-sources/` and `tools/`. Source for the eventual public 2.0 release is being audited separately; older private application history is not being exposed.
