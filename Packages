@@ -1,0 +1,19 @@
+Package: com.shalamand3r.relayrace
+Name: RelayRace
+Depends: firmware (>= 17.0), ellekit
+Description: Fix iCloud Private Relay on RootHide Bootstrap. Original tweak by shalamand3r; RootHide port by Zema.
+Icon: https://github.com/shalamand3r/shalamand3r.github.io/blob/main/icons/relayrace.png?raw=true
+SileoDepiction: https://raw.githubusercontent.com/shalamand3r/shalamand3r.github.io/refs/heads/main/depictions/relayrace.json
+Maintainer: Zema
+Author: shalamand3r
+Section: Tweaks
+Architecture: iphoneos-arm64e
+Version: 1.1+roothide.20.1
+Installed-Size: 412
+Filename: ./pool/com.shalamand3r.relayrace_1.1+roothide.20.1_iphoneos-arm64e.deb
+Size: 12108
+MD5sum: d9827d0a5e1e1a23d0936dc4dde2c2d3
+SHA1: 28f584d2fe2699b0cdeefeef98c177f9245d3c94
+SHA256: efbec56da598293491ae7ff07d81ecf0596108c30176a11182d122772117d965
+SHA512: bc4acac1421c60a32dbee23239b15fdea312e58afe7d50608f7c8ef0d45ff0731fa4aa76bce5dbfcd28d725664478d540a0d95e5ab5e2d93e6959bfbf7f1e192
+
