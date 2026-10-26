@@ -44,4 +44,3 @@ The Release metadata is signed with an Ed25519 OpenPGP key. Public key:
 This is the canonical Sileo source. Older v19/v18 packages remain in the
 private recovery archive. Installation or upgrade of version 1.2 on a phone
 and reboot persistence still need device testing.
-
