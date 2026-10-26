@@ -12,7 +12,7 @@
         "control": "ab9cbd6b18183065f405a1acc86e3a2b12a537732bff392f87d47fbfc9f4a6cb",
         "postinst": "d2b49f487356ec1cbed46be1455f89c19256572a98e7204c94dd7db6a60e9845"
       },
-      "device_install_verified": false
+      "device_install_verified": true
     },
     {
       "file": "com.zema.zgta-v.appsync_0.88-1_iphoneos-arm.deb",
@@ -38,7 +38,9 @@
     "TrollStore_installed": "2.1.1",
     "ZGTA_V_installed": false,
     "source_fixes": "0.88-2 corrects /rootfs lookup, accepts official UID 33 ownership, converts native IPA paths in a RootHide context",
-    "phone_retest_pending": true
+    "phone_retest_pending": false
   },
-  "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b"
+  "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
+  "TrollStore_phone_installation_and_launcher": "PASS \u2014 iPhone15Pro/iOS17.0/TrollStore2.1.1/RootHide, Build88",
+  "physical_verification": "downloads/zgta-v-device-install.json"
 }

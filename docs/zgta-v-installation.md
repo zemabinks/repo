@@ -6,7 +6,7 @@ This is a **candidate**, by **zema**. It is not the audited public 2.0 release y
 
 Installer **0.88-1** was tested on an iOS 17.0 phone with **TrollStore 2.1.1 already installed**, but failed to find its helper before downloading the IPA. The game was not installed. That error did not prove TrollStore was missing.
 
-Refresh Zema's Repo and upgrade/reinstall **ZGTA V (TrollStore installer)** using **0.88-2**. Keep TrollStore installed. The new script uses RootHide's documented `/rootfs` view, accepts helper ownership UID 0 or 33 as used by upstream, and translates the IPA path whenever running in RootHide. It does not change helper ownership or filesystem permissions. Twenty local mocked tests pass; the new package still needs a physical-phone retest.
+Refresh Zema's Repo and upgrade/reinstall **ZGTA V (TrollStore installer)** using **0.88-2**. Keep TrollStore installed. The new script uses RootHide's documented `/rootfs` view, accepts helper ownership UID 0 or 33 as used by upstream, and translates the IPA path whenever running in RootHide. It does not change helper ownership or filesystem permissions. Twenty local mocked tests pass. The physical retest now passes: Sileo installed Build88 through TrollStore on an iPhone15Pro with iOS17.0 and TrollStore2.1.1, Xcode confirms version2.0/build88, and the user confirms that the launcher opens.
 
 The curl, libc-ares2, libcurl4, libnghttp2-14, librtmp1 and libssh2-1 packages shown by Sileo are the download tool and its networking dependencies. The 0.88-2 correction adds no dependencies. Leave those libraries installed; other software may use them. The yellow warning about a missing Maintainer field in an unrelated package was not the reported ZGTA V failure.
 
@@ -48,7 +48,7 @@ SHA-256: `4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d`
 - Local native ARM64 package and Simulator UI/logic checks passed for Build 88.
 - Installer shell tests use isolated mock helpers; they do **not** prove device installation.
 - Debian archives contain only control metadata and a post-install script, with no app payload, uninstall scripts, game data or bundled native helpers.
-- The 0.88-1 phone installation failed at helper discovery; 0.88-2 physical-device retest remains pending. Live two-device gameplay, real updates and reboot behavior remain pending.
+- The 0.88-1 phone installation failed at helper discovery; 0.88-2 Sileo → TrollStore installation and launcher opening pass on the tested iPhone. Live two-device gameplay, real updates and reboot behavior remain pending.
 - Installation method does not establish complete jailbreak/iOS/device compatibility.
 
 ## Upstream interfaces checked

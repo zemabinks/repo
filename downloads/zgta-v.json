@@ -12,5 +12,5 @@
   "download_url": "https://github.com/zemabinks/repo/releases/download/zgta-v-build-88/ZGTA-V-Build88-LobbyFavorites-TrollStore.ipa",
   "release_url": "https://github.com/zemabinks/repo/releases/tag/zgta-v-build-88",
   "own_game_files_required": true,
-  "device_acceptance": "Pending; Simulator UI and local package checks pass"
+  "device_acceptance": "Sileo \u2192 TrollStore installation and launcher opening confirmed on iPhone15Pro/iOS17.0; gameplay, two-device multiplayer, app-data upgrade and reboot checks pending"
 }

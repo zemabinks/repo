@@ -20,17 +20,17 @@ By **zema**. Pure Black launcher, fully clickable Home cards and separate Online
 
 | Your setup | Package | Requirements and status |
 | --- | --- | --- |
-| Existing compatible TrollStore / TrollStore Lite | **ZGTA V (TrollStore installer)** | Preferred route. Uses the existing helper; no AppSync dependency. 0.88-2 corrects the observed RootHide discovery failure; phone retest pending. |
+| Existing compatible TrollStore / TrollStore Lite | **ZGTA V (TrollStore installer)** | Preferred route. Uses the existing helper; no AppSync dependency. 0.88-2 installation and launcher opening confirmed on iPhone15Pro / iOS17.0 / TrollStore2.1.1 / RootHide. |
 | No TrollStore; compatible ARM64 rootful jailbreak | **ZGTA V (AppSync installer - experimental)** | iOS 15.0–18.2; official AppSync Unified and appinst dependencies. Not for RootHide or rootless. Device installation/gameplay untested. |
 | Neither supported method | No supported Sileo installer yet | Do not install arbitrary AppSync conversions. |
 
-**RootHide correction:** update the TrollStore wrapper to **0.88-2**. Version 0.88-1 failed to find an existing TrollStore installation and stopped before the IPA download. The fix uses the documented `/rootfs` view and accepts upstream helper ownership (UID 0 or 33). It also converts the IPA path for RootHide even if the helper is reached through mirrored `/var`. Twenty local mocked tests pass; the corrected package still needs a phone installation test.
+**RootHide correction:** update the TrollStore wrapper to **0.88-2**. Version 0.88-1 failed to find an existing TrollStore installation and stopped before the IPA download. The fix uses the documented `/rootfs` view and accepts upstream helper ownership (UID 0 or 33). It also converts the IPA path for RootHide even if the helper is reached through mirrored `/var`. Twenty local mocked tests pass. The corrected package has now installed Build88 on the physical iPhone15Pro (iOS17.0, TrollStore2.1.1, RootHide), Xcode confirms the installed build, and the user confirms the launcher opens. Gameplay, real app-data upgrades, two-device multiplayer and reboot persistence remain untested.
 
 [Installation and compatibility guide](docs/zgta-v-installation.md). Both wrappers download the exact IPA above, check its size/SHA-256, and wait for the native installer result. Removing a wrapper leaves the game and its data installed. They do not uninstall the game or force an installation-method migration.
 
 AppSync dependencies come from [Karen/あけみ’s official source](https://cydia.akemi.ai/) (add it separately in Sileo). That source timed out during checks on 2026-10-26, so fresh dependency downloads could not be verified. AppSync installations require an active compatible jailbreak; reboot persistence is not claimed.
 
-Simulator UI, 38 logic regressions and local ARM64 package checks pass. Physical iPhone acceptance and live two-device gameplay remain pending. This is a candidate prerelease, not a claim of compatibility with every jailbroken device.
+Simulator UI, 38 logic regressions and local ARM64 package checks pass. Sileo → TrollStore installation and launcher opening now pass on the tested iPhone; gameplay, real app-data upgrades, live two-device multiplayer and reboot behavior remain pending. This is a candidate prerelease, not a claim of compatibility with every jailbroken device.
 
 Size: **90,997,632 bytes**. SHA-256: `4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d`.
 
