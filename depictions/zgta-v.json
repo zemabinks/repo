@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Build91\nCorrects the archive-access path after the Build90 phone log reported Operation not permitted. Keeps each discovered file with its folder grant and coordinates the actual provider content read, including multipart sets. Archives and unrelated saves are preserved in local tests.\n\nLocal native build/package, actual macOS extraction/access-lifetime/cancellation and three Simulator UI cases pass. Actual Build91 phone/provider/RAR testing, gameplay, save upgrades and reboot behavior remain pending. Keep the app and its data installed.",
+          "markdown": "### Build91\nCorrects the archive-access path after the Build90 phone log reported Operation not permitted. Keeps each discovered file with its folder grant and coordinates the actual provider content read, including multipart sets. Archives and unrelated saves are preserved in local tests.\n\nLocal native build/package, actual macOS extraction/access-lifetime/cancellation and three Simulator UI cases pass. The owner confirms the archive workflow now works on the physical phone after the Build91 update. No new independent inventory/log was collected; gameplay, save upgrades and reboot behavior remain pending. Keep the app and its data installed.",
           "useSpacing": true
         }
       ]
@@ -30,12 +30,12 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.91-1 / App Build91\n- Files-provider archive-access candidate: retain parent grants and coordinate actual reads.\n- Preserve source archives and release access on success, error and cancellation.\n- Same native installer interface; pin Build91 by exact size/SHA-256.\n- Retain earlier indexed wrapper versions. Physical phone/provider retest pending."
+          "markdown": "### Installer0.91-1 / App Build91\n- Files-provider archive-access candidate: retain parent grants and coordinate actual reads.\n- Preserve source archives and release access on success, error and cancellation.\n- Same native installer interface; pin Build91 by exact size/SHA-256.\n- Retain earlier indexed wrapper versions. Physical archive workflow subsequently owner-confirmed; broader device tests remain pending."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.90-1 / App Build90\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
+          "markdown": "### Installer0.90-1 / App Build90\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Upgrade and scan subsequently owner-confirmed; provider archive read failed with EPERM and was corrected in Build91."
         },
         {
           "class": "DepictionMarkdownView",

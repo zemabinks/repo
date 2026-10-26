@@ -51,6 +51,8 @@
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
-    "build91_provider_retest_pending": true
-  }
+    "build91_provider_retest_pending": false
+  },
+  "current_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
+  "current_phone_install_test_scope": "Current wrapper/helper result has not been independently collected; owner confirms the archive workflow works after the Build91 update."
 }

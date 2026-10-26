@@ -18,7 +18,7 @@ By **zema**. Build90's supplied phone logs confirm installation and folder scann
 
 Refresh this source in Sileo and update **ZGTA V (TrollStore installer) to0.91-1** with your existing compatible TrollStore or TrollStore Lite setup. No AppSync dependency is needed. The native helper interface is unchanged; exact IPA size and SHA-256 are checked. Earlier indexed wrapper versions remain available to cached Sileo selections.
 
-Local ARM64 Release/package/signature/CRC and resource checks pass. Actual macOS coordinated ZIP/split-ZIP reads, writer exclusion/release, cancellation and archive/unrelated-save preservation pass. **Three current Simulator UI cases pass**, including the original parent-grant handoff. Preview engine/download/install adapters are inert; screenshots use temporary fixtures. **Actual Build91 phone/provider/RAR testing is pending.** No new gameplay, app-data upgrade/save retention, multiplayer, performance or reboot-persistence claim is made. The theme, icons, English-only interface, game/artwork/shader resources and existing save compatibility are retained.
+Local ARM64 Release/package/signature/CRC and resource checks pass. Actual macOS coordinated ZIP/split-ZIP reads, writer exclusion/release, cancellation and archive/unrelated-save preservation pass. **Three current Simulator UI cases pass**, including the original parent-grant handoff. Preview engine/download/install adapters are inert; screenshots use temporary fixtures. **The owner confirms the archive workflow now works on the physical phone after the Build91 update.** This is an owner report; no new independent inventory/log was collected. No new gameplay, app-data upgrade/save retention, multiplayer, performance or reboot-persistence claim is made. The theme, icons, English-only interface, game/artwork/shader resources and existing save compatibility are retained.
 
 The separate AppSync0.91-1 wrapper remains experimental for compatible ARM64 rootful jailbreaks, iOS15.0–18.2, using official dependencies from https://cydia.akemi.ai/. It is not a RootHide/rootless conversion. Fresh dependency availability and actual device results remain unverified.
 
@@ -26,7 +26,7 @@ The separate AppSync0.91-1 wrapper remains experimental for compatible ARM64 roo
 
 IPA size: **90,975,818 bytes**. SHA-256: `f54b0172e6d9d348295af4ecf117c71817284eaca09cbf9e09aa130edb6f9802`.
 
-Machine-readable download: [`downloads/zgta-v.json`](downloads/zgta-v.json). [Historical Build88 installation evidence](downloads/zgta-v-device-install.json); Build90 upgrade/scan observations and limitations are described in the current release verification.
+Machine-readable download: [`downloads/zgta-v.json`](downloads/zgta-v.json). [Historical Build88 installation evidence](downloads/zgta-v-device-install.json); Build90 upgrade/scan observations and limitations are described in the current release verification. [Build91 owner archive confirmation](downloads/zgta-v-build91-owner-confirmation.json).
 
 ## GitHub Releases
 

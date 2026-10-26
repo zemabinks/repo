@@ -21,7 +21,7 @@ Build91 pairs the archive and original folder grant, removes an unscoped fallbac
 -23 local Sileo test methods pass; native installation interfaces are mocked.
 - The supplied phone log confirms the earlier Sileo0.88-2 →0.90-1/TrollStore app replacement succeeded. Folder scans are confirmed; archive extraction failed with EPERM.
 
-**Build91 still needs the actual phone/provider/RAR retest.** Do not delete the archive or installed game to troubleshoot. If access is still refused, use **Choose an archive…** for a fresh file grant and share the current log. Gameplay, real save retention during an app update, performance and reboot persistence remain unverified on91. Own matching prepared game files are required; none are bundled.
+**The owner confirms the archive workflow now works on the physical phone after the Build91 update.** This is an owner report; no new independent device inventory/log was collected. Do not delete the archive or installed game to troubleshoot. If access is still refused, use **Choose an archive…** for a fresh file grant and share the current log. Gameplay, real save retention during an app update, performance and reboot persistence remain unverified on91. Own matching prepared game files are required; none are bundled.
 
 ## Manual download
 [Build91 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-91) contains the same IPA and checksum. Open it in compatible TrollStore to update the existing app.
