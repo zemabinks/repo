@@ -10,7 +10,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "## ZGTA V \u2014 AppSync installer\n**Build91 experimental candidate \u00b7 by zema.**\n\nOnly for compatible ARM64 rootful jailbreaks on iOS 15.0\u201318.2 without TrollStore. Not for RootHide or rootless. Prefer the separate TrollStore installer when supported.\n\nUses official **AppSync Unified (116.0+)** and **appinst (2.1.1+)** from https://cydia.akemi.ai/ \u2014 add that source in Sileo so it can resolve dependencies. Its server timed out during our 2026-10-26 checks; dependency availability is unverified. No dependencies are downloaded or installed secretly by this package.\n\nDownloads the pinned IPA, checks size and SHA-256, and runs appinst. Own game files required. Removing this wrapper leaves the app and its data installed. No uninstall or force-overwrite fallback.\n\n### Verification\nLocal installer tests and archive checks pass. Actual AppSync installation, app launch, gameplay, updates and reboot behavior are **untested**. An active compatible jailbreak is required; this is not TrollStore-style persistence. It will not silently migrate a TrollStore-managed copy. Read the Sileo log if installation fails."
+          "markdown": "## ZGTA V — AppSync installer\n\n**2.0 beta · by zema · experimental**\n\nFor compatible **ARM64 rootful jailbreaks on iOS 15.0–18.2**. Not for RootHide or rootless. Own prepared game files required.\n\nAdd `https://cydia.akemi.ai/` in Sileo for **AppSync Unified 116.0+** and **appinst 2.1.1+**. Install with a compatible jailbreak active. Dependency availability and ZGTA V installation/gameplay through AppSync remain unverified.\n\nUse the separate TrollStore installer if you already use compatible TrollStore. Removing this installer leaves the app/data installed.\n\n[Installation and compatibility](https://github.com/zemabinks/repo/blob/main/docs/zgta-v-installation.md) · [Other sideloaders](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md)"
         }
       ]
     },
@@ -21,17 +21,17 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.91-1 / App Build91\n- Files-provider archive-access candidate: retain parent grants and coordinate actual reads.\n- Preserve source archives and release access on success, error and cancellation.\n- Same native installer interface; pin Build91 by exact size/SHA-256.\n- Retain earlier indexed wrapper versions. Physical phone/provider retest pending."
+          "markdown": "### Installer 0.91-1 / App Build 91\n- Fix opening archives found by a folder scan."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.90-1 / App Build90\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
+          "markdown": "### Installer 0.90-1 / App Build 90\n- Improve game-folder scanning and use English throughout the menus."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer 0.88-1\n- Initial rootful AppSync test candidate.\n- Declared official AppSync Unified and appinst dependencies.\n- Device, firmware, dependency and download checks before installation."
+          "markdown": "### Installer 0.88-1\n- Initial experimental rootful AppSync installer."
         }
       ]
     }

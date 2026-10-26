@@ -8,18 +8,18 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**2.0 beta · native Build91 \u00b7 by zema.**",
-          "useSpacing": true
+          "useSpacing": true,
+          "markdown": "## ZGTA V\n\n**2.0 beta · by zema**\n\nSolo Story, Free Roam and Private Multiplayer."
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Install this package in Sileo to download the exact verified IPA and pass it to your existing TrollStore or TrollStore Lite installer. It checks size and SHA-256 before installation.\n\nRequires a compatible TrollStore setup and your own game files. An existing non-TrollStore app with the same identifier is not forcibly overwritten.",
-          "useSpacing": true
+          "useSpacing": true,
+          "markdown": "**Requires iOS / iPadOS 15.0 or later**, compatible TrollStore / TrollStore Lite and your own prepared game files.\n\nInstall this package to install ZGTA V through your existing TrollStore setup. Update over the existing app. Removing this installer package leaves the app and its data installed."
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Build91\nCorrects the archive-access path after the Build90 phone log reported Operation not permitted. Keeps each discovered file with its folder grant and coordinates the actual provider content read, including multipart sets. Archives and unrelated saves are preserved in local tests.\n\nLocal native build/package, actual macOS extraction/access-lifetime/cancellation and three Simulator UI cases pass. The owner confirms the archive workflow now works on the physical phone after the Build91 update. No new independent inventory/log was collected; gameplay, save upgrades and reboot behavior remain pending. Keep the app and its data installed.",
-          "useSpacing": true
+          "useSpacing": true,
+          "markdown": "[Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Other sideloading options](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md)"
         }
       ]
     },
@@ -30,22 +30,22 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.91-1 / App Build91\n- Files-provider archive-access candidate: retain parent grants and coordinate actual reads.\n- Preserve source archives and release access on success, error and cancellation.\n- Same native installer interface; pin Build91 by exact size/SHA-256.\n- Retain earlier indexed wrapper versions. Physical archive workflow subsequently owner-confirmed; broader device tests remain pending."
+          "markdown": "### Installer 0.91-1 / App Build 91\n- Fix opening archives found by a folder scan."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.90-1 / App Build90\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Upgrade and scan subsequently owner-confirmed; provider archive read failed with EPERM and was corrected in Build91."
+          "markdown": "### Installer 0.90-1 / App Build 90\n- Improve game-folder scanning and use English throughout the menus."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer 0.88-2\n- Fix RootHide helper discovery through /rootfs.\n- Accept the UID 33 ownership used by upstream TrollStore, as well as UID 0.\n- Convert IPA paths for RootHide mirrored-helper cases.\n- Improve failure messages; do not claim TrollStore is absent when discovery fails.\n- Same Build 88 IPA and dependencies; installation and launcher opening subsequently confirmed on the tested phone."
+          "markdown": "### Installer 0.88-2\n- Fix TrollStore detection on RootHide."
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Installer 0.88-1\n- Initial Sileo \u2192 TrollStore candidate.\n- Pinned Build 88 download and integrity checks.\n- Native TrollStore install/custom interface; no force flag.\n- Installer removal preserves the app and data.",
-          "useSpacing": true
+          "useSpacing": true,
+          "markdown": "### Installer 0.88-1\n- Initial Sileo installer."
         }
       ]
     }
