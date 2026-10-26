@@ -1,12 +1,14 @@
-# ZGTA V Build 89 — candidate update
+# ZGTA V Build 90 — candidate update
 
 This is a **candidate**, by **zema**. It is not the audited public 2.0 release yet. Your own game files are required. These small `.deb` packages install the same pinned IPA; they do not contain the game files. Keep your existing game app, files and saves when updating.
 
-## What changed in Build89
+## What changed in Build90
+
+Build90 also clears stale Ready when a selected external folder becomes unavailable. Only that model and bundle version differ from89; its UI sources/resources are byte-identical, so89 Simulator screenshots/cases are reused. The new disappearance regression passes. No fresh90 phone or Simulator run is claimed.
 
 The app is English only, including upgrades previously set to Vietnamese. Folder scans find archives beside incomplete data, rescan remembered locations, retain parent-folder access during extraction and validate readiness. Default unpacking keeps the source archive; the optional space-saving mode explicitly removes it. Existing saves, settings, backups, artwork and game resources are preserved. Old backup formats remain importable.
 
-Build89 passes local ARM64 build/package checks, actual Mac ZIP/split-ZIP extraction, discovery/English/save/control regressions and two Simulator UI cases. **Its physical phone installation and actual iOS Files-provider access have not been tested yet.** Build88 installation and launcher opening were confirmed separately. Keep the current app and data when updating.
+Build90 passes local ARM64 build/package checks, actual Mac ZIP/split-ZIP extraction, discovery/English/save/control regressions and two Simulator UI cases. **Its physical phone installation and actual iOS Files-provider access have not been tested yet.** Build88 installation and launcher opening were confirmed separately. Keep the current app and data when updating.
 
 After updating: open Game files, choose the folder containing your archive, then try Look again and Check every file again. Archive candidates should remain available even beside an incomplete game. Report the exact status if access fails; a missing-file list alone does not prove storage exhaustion or archive corruption.
 
@@ -21,7 +23,7 @@ The curl, libc-ares2, libcurl4, libnghttp2-14, librtmp1 and libssh2-1 packages s
 ## Your iPhone already has TrollStore or TrollStore Lite
 
 1. Add `https://zemabinks.github.io/repo/` to Sileo, or refresh that source.
-2. Search for **ZGTA V (TrollStore installer)** and install/update to **0.89-1**.
+2. Search for **ZGTA V (TrollStore installer)** and install/update to **0.90-1**.
 3. Let the download and native installation finish. Open **ZGTA V** afterward.
 
 No AppSync package is needed for this route. It uses the helper from your installed TrollStore, verifies the exact IPA size and SHA-256, and waits for its result. It does not force a same-identifier app installed by another method to be overwritten. If the helper cannot execute from your bootstrap, installation stops with a Sileo error. Send that log; do not delete your game or reset data.
@@ -45,15 +47,15 @@ The installer refuses an incompatible architecture/firmware, unconfigured or out
 
 ## Manual download
 
-The [Build 89 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-89) also contains the IPA and checksum files. Download the IPA and open it in your compatible TrollStore. Installing either Sileo wrapper downloads exactly those same bytes.
+The [Build 90 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-90) also contains the IPA and checksum files. Download the IPA and open it in your compatible TrollStore. Installing either Sileo wrapper downloads exactly those same bytes.
 
-IPA size: **90,970,017 bytes**
+IPA size: **90,970,670 bytes**
 
-SHA-256: `24ef0268fee776b42302cdfec45c189ca30095c3b7d837ae356b7cd582ffcdcb`
+SHA-256: `e40926d2f5b2fa6964b8400eba76ed782b39c48e0800ed7bfc56c0f6cdc06edd`
 
 ## Verification and limits
 
-- Local ARM64 build/package, English/save/control checks, folder discovery, real Mac ZIP/split-ZIP extraction and two Simulator UI cases pass for Build89.
+- Local ARM64 build/package, English/save/control checks, folder discovery, real Mac ZIP/split-ZIP extraction and two Simulator UI cases pass for Build90.
 - Installer shell tests use isolated mock helpers; they do **not** prove device installation.
 - Debian archives contain only control metadata and a post-install script, with no app payload, uninstall scripts, game data or bundled native helpers.
 - The 0.88-1 phone installation failed at helper discovery; 0.88-2 Sileo → TrollStore installation and launcher opening pass on the tested iPhone. Live two-device gameplay, real updates and reboot behavior remain pending.

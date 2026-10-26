@@ -8,7 +8,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build89 test candidate \u00b7 by zema.**",
+          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build90 test candidate \u00b7 by zema.**",
           "useSpacing": true
         },
         {
@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Build89\nEnglish-only interface; repaired folder search/rechecks and parent-folder archive access; default unpacking keeps the source archive. Saves, settings, original game/artwork resources and the V+Z icon are retained.\n\nLocal native build/package, discovery/extraction and Simulator checks pass. Actual Build89 phone installation, Files-provider access, gameplay, app-data upgrades and reboot behavior are pending. Build88 installation/launcher opening were confirmed separately using the same TrollStore helper interface.\n\nRemoving this wrapper leaves the app/data in place. Your own game files and an existing compatible TrollStore setup are required. No AppSync dependency.",
+          "markdown": "### Build90\nEnglish-only interface; repaired folder search/rechecks and parent-folder archive access; default unpacking keeps the source archive. Saves, settings, original game/artwork resources and the V+Z icon are retained.\n\nLocal native build/package, discovery/extraction and Simulator checks pass. Actual Build90 phone installation, Files-provider access, gameplay, app-data upgrades and reboot behavior are pending. Build88 installation/launcher opening were confirmed separately using the same TrollStore helper interface.\n\nRemoving this wrapper leaves the app/data in place. Your own game files and an existing compatible TrollStore setup are required. No AppSync dependency.",
           "useSpacing": true
         }
       ]
@@ -30,7 +30,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer0.89-1 / App Build89\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
+          "markdown": "### Installer0.90-1 / App Build90\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
         },
         {
           "class": "DepictionMarkdownView",

@@ -5,22 +5,22 @@
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.89-1_all.deb",
-      "bytes": 3044,
-      "sha256": "1366e60dcd472382f06ea3f58c789d7253da951753c6f368b5f4e0fe24d5c279",
+      "file": "com.zema.zgta-v.trollstore_0.90-1_all.deb",
+      "bytes": 3052,
+      "sha256": "da5a7e9b9359fa5b1c476abb3bff13b7309a10a81b5380e1acc43bdec441cf72",
       "source_inputs_sha256": {
-        "control": "e616a163e951e400152b04e7cb832550d2a7ce6f8d41eae3461037a58250730f",
-        "postinst": "b94c7eb723d4d104c7ba9a9027099adfd10dca08dafc13948f1f9140d3e58715"
+        "control": "3283e143bf55c31d24014b1c1e41ec64773594e9413a7f5a9318cafc48b5fe1b",
+        "postinst": "dea4e3230eb56d492a81db3123582162445afd67cfa35ec7b1e7040f53042593"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.89-1_iphoneos-arm.deb",
-      "bytes": 2900,
-      "sha256": "3130db7a0d64d9c6606727796797ed6e7383ed67cc68ff79be281fc8922f81a0",
+      "file": "com.zema.zgta-v.appsync_0.90-1_iphoneos-arm.deb",
+      "bytes": 2904,
+      "sha256": "05bcc7bdd33f8e8e197f9fa6138b4231d6ee2f4b7b18ada49e1faee00cf307d1",
       "source_inputs_sha256": {
-        "control": "0e61a6c906643305275d1ef7bfa83b5b46f8adccb31bd04e4d36ff39b65aaf7b",
-        "postinst": "02525e5979aefdf1940b53ad96800dd86385267f702b009e8ee71d4384219c78"
+        "control": "3eddf91d0ebfb46adc313034002367fc50461c0cd65367e672d2c29b0241f396",
+        "postinst": "75135ee713f2cf9bfd9ec0499c1716c0582aa37eae768e9a376372153eea2218"
       },
       "device_install_verified": false
     }
@@ -30,8 +30,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "c2f1ff58ba74da56cd4e895d4c082082edc69354",
-  "app_ipa_sha256": "24ef0268fee776b42302cdfec45c189ca30095c3b7d837ae356b7cd582ffcdcb",
+  "app_build_source_commit": "0a85685009b8033134214b709847298c896162b0",
+  "app_ipa_sha256": "e40926d2f5b2fa6964b8400eba76ed782b39c48e0800ed7bfc56c0f6cdc06edd",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -43,7 +43,8 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "PASS \u2014 iPhone15Pro/iOS17.0/TrollStore2.1.1/RootHide, Build88",
-  "current_build": 89,
-  "current_installer_version": "0.89-1",
-  "current_phone_install_test_pending": true
+  "current_build": 90,
+  "current_installer_version": "0.90-1",
+  "current_phone_install_test_pending": true,
+  "installer_template_tests": "Same unchanged templates as the20 passing fixture tests; current catalog values separately checked"
 }
