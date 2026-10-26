@@ -8,7 +8,14 @@ ROOT=Path(__file__).resolve().parents[1]
 INSTALLERS={'com.zema.zgta-v.trollstore':'all','com.zema.zgta-v.appsync':'iphoneos-arm'}
 def update():
     existing=(ROOT/'Packages').read_text()
-    retained=[s for s in existing.strip().split('\n\n') if s.split('\n')[0] not in {'Package: '+p for p in INSTALLERS}]
+    def identity(stanza):
+        fields=dict(line.split(': ',1) for line in stanza.splitlines() if ': ' in line)
+        return tuple(fields[key] for key in ('Package','Version','Architecture'))
+    # Keep exact earlier versions available to Sileo's selected/cached packages.
+    # An idempotent rebuild replaces only the same id, version and architecture.
+    current={identity((ROOT/f'package-sources/{flavor}-installer/control').read_text().strip())
+             for flavor in ('trollstore','appsync')}
+    retained=[s for s in existing.strip().split('\n\n') if identity(s) not in current]
     stanzas=[]
     for package,arch in INSTALLERS.items():
         flavor='appsync' if package.endswith('.appsync') else 'trollstore'

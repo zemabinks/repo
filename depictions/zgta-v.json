@@ -8,7 +8,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build90 test candidate \u00b7 by zema.**",
+          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build91 test candidate \u00b7 by zema.**",
           "useSpacing": true
         },
         {
@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Build90\nEnglish-only interface; repaired folder search/rechecks and parent-folder archive access; default unpacking keeps the source archive. Saves, settings, original game/artwork resources and the V+Z icon are retained.\n\nLocal native build/package, discovery/extraction and Simulator checks pass. Actual Build90 phone installation, Files-provider access, gameplay, app-data upgrades and reboot behavior are pending. Build88 installation/launcher opening were confirmed separately using the same TrollStore helper interface.\n\nRemoving this wrapper leaves the app/data in place. Your own game files and an existing compatible TrollStore setup are required. No AppSync dependency.",
+          "markdown": "### Build91\nCorrects the archive-access path after the Build90 phone log reported Operation not permitted. Keeps each discovered file with its folder grant and coordinates the actual provider content read, including multipart sets. Archives and unrelated saves are preserved in local tests.\n\nLocal native build/package, actual macOS extraction/access-lifetime/cancellation and three Simulator UI cases pass. Actual Build91 phone/provider/RAR testing, gameplay, save upgrades and reboot behavior remain pending. Keep the app and its data installed.",
           "useSpacing": true
         }
       ]
@@ -27,6 +27,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer0.91-1 / App Build91\n- Files-provider archive-access candidate: retain parent grants and coordinate actual reads.\n- Preserve source archives and release access on success, error and cancellation.\n- Same native installer interface; pin Build91 by exact size/SHA-256.\n- Retain earlier indexed wrapper versions. Physical phone/provider retest pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,

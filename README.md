@@ -10,23 +10,23 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — Build 90 candidate
+### ZGTA V — Build91 archive-access candidate
 
-[Download the TrollStore IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-90/ZGTA-V-Build90-GameFiles-English-TrollStore.ipa) · [Release notes and Sileo installers](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-90)
+[Download the TrollStore IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-91/ZGTA-V-Build91-Archive-Access-TrollStore.ipa) · [Release notes and Sileo installers](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-91)
 
-By **zema**. English-only UI, repaired Game Files folder discovery/rechecks, retained folder access for extraction, and archive-preserving unpacking by default. Build90 additionally clears stale Ready for an unavailable external folder. Its UI is byte-identical to89; that Simulator evidence is reused alongside the new folder regression. The approved Pure Black layout, V+Z icon, saved settings, saves and game resources are retained. Your own game files are required. Update the existing app without deleting its data.
+By **zema**. Build90's supplied phone logs confirm installation and folder scanning work, but a Files-provider archive fails to open with **Operation not permitted**. Build91 keeps each discovered archive with its original folder grant, coordinates the actual content reads and improves read-error messages. Keep the existing app, game files, archives and saves.
 
-Refresh this source in Sileo and install/update **ZGTA V (TrollStore installer) 0.90-1** for an existing compatible TrollStore or TrollStore Lite setup. No AppSync dependency is needed. This retains the existing 0.88-2 helper interface and pins the Build90 IPA. **Build90 phone installation and actual Files-provider access are pending.** Build88 installation and launcher opening were confirmed separately on iPhone15Pro/iOS17.0/TrollStore2.1.1/RootHide.
+Refresh this source in Sileo and update **ZGTA V (TrollStore installer) to0.91-1** with your existing compatible TrollStore or TrollStore Lite setup. No AppSync dependency is needed. The native helper interface is unchanged; exact IPA size and SHA-256 are checked. Earlier indexed wrapper versions remain available to cached Sileo selections.
 
-The separate **AppSync installer0.90-1** remains experimental: compatible ARM64 rootful jailbreaks on iOS15.0–18.2 only, with official AppSync Unified116.0+ and appinst2.1.1+ from https://cydia.akemi.ai/. It is not a RootHide/rootless conversion. Its dependency server timed out during earlier checks; fresh dependency downloads and device results remain unverified.
+Local ARM64 Release/package/signature/CRC and resource checks pass. Actual macOS coordinated ZIP/split-ZIP reads, writer exclusion/release, cancellation and archive/unrelated-save preservation pass. **Three current Simulator UI cases pass**, including the original parent-grant handoff. Preview engine/download/install adapters are inert; screenshots use temporary fixtures. **Actual Build91 phone/provider/RAR testing is pending.** No new gameplay, app-data upgrade/save retention, multiplayer, performance or reboot-persistence claim is made. The theme, icons, English-only interface, game/artwork/shader resources and existing save compatibility are retained.
 
-[Installation guide](docs/zgta-v-installation.md). Both wrappers verify the exact IPA size/SHA-256 and wait for the native installer. Removing a wrapper leaves the game/data installed; no force migration or game uninstall is used.
+The separate AppSync0.91-1 wrapper remains experimental for compatible ARM64 rootful jailbreaks, iOS15.0–18.2, using official dependencies from https://cydia.akemi.ai/. It is not a RootHide/rootless conversion. Fresh dependency availability and actual device results remain unverified.
 
-Local native build/signature/entitlements/identity/resources/CRC, discovery and English/save/control regressions, real Mac ZIP/split-ZIP extraction and two actual Simulator UI cases pass. Phone Files-provider grants, real app-data upgrades, gameplay, two-device multiplayer, performance and reboot persistence remain pending for89. This candidate does not complete the separate public2.0/platform audit.
+[Installation guide](docs/zgta-v-installation.md). Removing either small wrapper leaves the app/data in place. Your own matching game files are required. The clean public2.0/platform audit remains in progress.
 
-Size: **90,970,670 bytes**. SHA-256: `e40926d2f5b2fa6964b8400eba76ed782b39c48e0800ed7bfc56c0f6cdc06edd`.
+IPA size: **90,975,818 bytes**. SHA-256: `f54b0172e6d9d348295af4ecf117c71817284eaca09cbf9e09aa130edb6f9802`.
 
-Machine-readable download: [`downloads/zgta-v.json`](downloads/zgta-v.json). [Previous confirmed installation evidence — Build88](downloads/zgta-v-device-install.json).
+Machine-readable download: [`downloads/zgta-v.json`](downloads/zgta-v.json). [Historical Build88 installation evidence](downloads/zgta-v-device-install.json); Build90 upgrade/scan observations and limitations are described in the current release verification.
 
 ## GitHub Releases
 
@@ -44,3 +44,4 @@ The Release metadata is signed with an Ed25519 OpenPGP key. Public key:
 This is the canonical Sileo source. Older v19/v18 packages remain in the
 private recovery archive. Installation or upgrade of version 1.2 on a phone
 and reboot persistence still need device testing.
+
