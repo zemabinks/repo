@@ -8,7 +8,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build91 test candidate \u00b7 by zema.**",
+          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**2.0 beta · native Build91 \u00b7 by zema.**",
           "useSpacing": true
         },
         {

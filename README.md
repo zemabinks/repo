@@ -10,7 +10,7 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — Build91 archive-access candidate
+### ZGTA V — 2.0 beta (native Build91)
 
 [Download the TrollStore IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-91/ZGTA-V-Build91-Archive-Access-TrollStore.ipa) · [Release notes and Sileo installers](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-91)
 
@@ -22,7 +22,7 @@ Local ARM64 Release/package/signature/CRC and resource checks pass. Actual macOS
 
 The separate AppSync0.91-1 wrapper remains experimental for compatible ARM64 rootful jailbreaks, iOS15.0–18.2, using official dependencies from https://cydia.akemi.ai/. It is not a RootHide/rootless conversion. Fresh dependency availability and actual device results remain unverified.
 
-[Installation guide](docs/zgta-v-installation.md). Removing either small wrapper leaves the app/data in place. Your own matching game files are required. The clean public2.0/platform audit remains in progress.
+[Installation guide](docs/zgta-v-installation.md). Removing either small wrapper leaves the app/data in place. Your own matching game files are required. [Public2.0 beta downloads](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.1) include this unchanged native91 IPA plus browser92 Windows, Mac/Linux and Android/Termux packages. [Beginner platform guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md). Windows/Android/Linux hardware gameplay, full real-save upgrades and reboot tests remain open. Existing native91 users do not need another update.
 
 IPA size: **90,975,818 bytes**. SHA-256: `f54b0172e6d9d348295af4ecf117c71817284eaca09cbf9e09aa130edb6f9802`.
 

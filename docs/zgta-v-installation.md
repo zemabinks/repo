@@ -1,6 +1,6 @@
 # ZGTA V Build91 — archive-access candidate
 
-By **zema**. Keep your existing app, game files, archives and saves. This is not the completed public2.0 audit.
+By **zema**. Keep your existing app, game files, archives and saves. This guide describes the unchanged native91 component of [public2.0 beta](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.1); broader device testing remains open.
 
 ## Update using compatible TrollStore
 1. In Sileo, refresh `https://zemabinks.github.io/repo/`.
@@ -55,6 +55,6 @@ The installer refuses an incompatible architecture/firmware, unconfigured or out
 - [Official appinst usage](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/README.md) and [dependency identifiers](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/control).
 - [AppSync firmware and architecture metadata](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/control). These upstream ranges do not constitute a ZGTA V device test.
 
-Installer source and local test cases are in `package-sources/` and `tools/`. Source for the eventual public 2.0 release is being audited separately; older private application history is not being exposed.
+Installer source and local test cases are in `package-sources/` and `tools/`. The clean [public2.0 beta source and platform guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) are available; older private application history remains private. The browser packages use revision92; native91 is unchanged.
 
 [Previous Build90 guide](zgta-v-installation-build90.md) retains its historical verification record.
