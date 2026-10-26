@@ -1,19 +1,27 @@
-# ZGTA V Build 88 — installation test
+# ZGTA V Build 89 — candidate update
 
 This is a **candidate**, by **zema**. It is not the audited public 2.0 release yet. Your own game files are required. These small `.deb` packages install the same pinned IPA; they do not contain the game files. Keep your existing game app, files and saves when updating.
 
-## Fix for the RootHide installation error
+## What changed in Build89
+
+The app is English only, including upgrades previously set to Vietnamese. Folder scans find archives beside incomplete data, rescan remembered locations, retain parent-folder access during extraction and validate readiness. Default unpacking keeps the source archive; the optional space-saving mode explicitly removes it. Existing saves, settings, backups, artwork and game resources are preserved. Old backup formats remain importable.
+
+Build89 passes local ARM64 build/package checks, actual Mac ZIP/split-ZIP extraction, discovery/English/save/control regressions and two Simulator UI cases. **Its physical phone installation and actual iOS Files-provider access have not been tested yet.** Build88 installation and launcher opening were confirmed separately. Keep the current app and data when updating.
+
+After updating: open Game files, choose the folder containing your archive, then try Look again and Check every file again. Archive candidates should remain available even beside an incomplete game. Report the exact status if access fails; a missing-file list alone does not prove storage exhaustion or archive corruption.
+
+## Previous RootHide installation correction (Build88)
 
 Installer **0.88-1** was tested on an iOS 17.0 phone with **TrollStore 2.1.1 already installed**, but failed to find its helper before downloading the IPA. The game was not installed. That error did not prove TrollStore was missing.
 
-Refresh Zema's Repo and upgrade/reinstall **ZGTA V (TrollStore installer)** using **0.88-2**. Keep TrollStore installed. The new script uses RootHide's documented `/rootfs` view, accepts helper ownership UID 0 or 33 as used by upstream, and translates the IPA path whenever running in RootHide. It does not change helper ownership or filesystem permissions. Twenty local mocked tests pass. The physical retest now passes: Sileo installed Build88 through TrollStore on an iPhone15Pro with iOS17.0 and TrollStore2.1.1, Xcode confirms version2.0/build88, and the user confirms that the launcher opens.
+The corrected **0.88-2** installer was released for Build88. Keep TrollStore installed. The new script uses RootHide's documented `/rootfs` view, accepts helper ownership UID 0 or 33 as used by upstream, and translates the IPA path whenever running in RootHide. It does not change helper ownership or filesystem permissions. Twenty local mocked tests pass. The physical retest now passes: Sileo installed Build88 through TrollStore on an iPhone15Pro with iOS17.0 and TrollStore2.1.1, Xcode confirms version2.0/build88, and the user confirms that the launcher opens.
 
 The curl, libc-ares2, libcurl4, libnghttp2-14, librtmp1 and libssh2-1 packages shown by Sileo are the download tool and its networking dependencies. The 0.88-2 correction adds no dependencies. Leave those libraries installed; other software may use them. The yellow warning about a missing Maintainer field in an unrelated package was not the reported ZGTA V failure.
 
 ## Your iPhone already has TrollStore or TrollStore Lite
 
 1. Add `https://zemabinks.github.io/repo/` to Sileo, or refresh that source.
-2. Search for **ZGTA V (TrollStore installer)** and install/update to **0.88-2**.
+2. Search for **ZGTA V (TrollStore installer)** and install/update to **0.89-1**.
 3. Let the download and native installation finish. Open **ZGTA V** afterward.
 
 No AppSync package is needed for this route. It uses the helper from your installed TrollStore, verifies the exact IPA size and SHA-256, and waits for its result. It does not force a same-identifier app installed by another method to be overwritten. If the helper cannot execute from your bootstrap, installation stops with a Sileo error. Send that log; do not delete your game or reset data.
@@ -37,15 +45,15 @@ The installer refuses an incompatible architecture/firmware, unconfigured or out
 
 ## Manual download
 
-The [Build 88 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-88) also contains the IPA and checksum files. Download the IPA and open it in your compatible TrollStore. Installing either Sileo wrapper downloads exactly those same bytes.
+The [Build 89 release](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-89) also contains the IPA and checksum files. Download the IPA and open it in your compatible TrollStore. Installing either Sileo wrapper downloads exactly those same bytes.
 
-IPA size: **90,997,632 bytes**
+IPA size: **90,970,017 bytes**
 
-SHA-256: `4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d`
+SHA-256: `24ef0268fee776b42302cdfec45c189ca30095c3b7d837ae356b7cd582ffcdcb`
 
 ## Verification and limits
 
-- Local native ARM64 package and Simulator UI/logic checks passed for Build 88.
+- Local ARM64 build/package, English/save/control checks, folder discovery, real Mac ZIP/split-ZIP extraction and two Simulator UI cases pass for Build89.
 - Installer shell tests use isolated mock helpers; they do **not** prove device installation.
 - Debian archives contain only control metadata and a post-install script, with no app payload, uninstall scripts, game data or bundled native helpers.
 - The 0.88-1 phone installation failed at helper discovery; 0.88-2 Sileo → TrollStore installation and launcher opening pass on the tested iPhone. Live two-device gameplay, real updates and reboot behavior remain pending.

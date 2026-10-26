@@ -1,12 +1,12 @@
 Package: com.zema.zgta-v.trollstore
 Name: ZGTA V (TrollStore installer)
-Version: 0.88-2
+Version: 0.89-1
 Architecture: all
 Section: Applications
 Maintainer: ZEMA
 Author: zema
 Depends: firmware (>= 15.0), curl, coreutils
-Description: Build 88 candidate installer. Downloads the pinned ZGTA V IPA and installs it using your existing TrollStore helper. Requires compatible TrollStore or TrollStore Lite. Game files are supplied separately. Removing this installer does not delete the TrollStore app or its data.
+Description: Build 89 English-only and Game Files candidate installer. Downloads the pinned ZGTA V IPA and installs it using your existing TrollStore helper. Requires compatible TrollStore or TrollStore Lite. Game files are supplied separately. Removing this installer does not delete the TrollStore app or its data.
 Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
 SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
 Homepage: https://zemabinks.github.io/repo/#zgta-v

@@ -10,7 +10,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "## ZGTA V \u2014 AppSync installer\n**Build 88 experimental candidate \u00b7 by zema.**\n\nOnly for compatible ARM64 rootful jailbreaks on iOS 15.0\u201318.2 without TrollStore. Not for RootHide or rootless. Prefer the separate TrollStore installer when supported.\n\nUses official **AppSync Unified (116.0+)** and **appinst (2.1.1+)** from https://cydia.akemi.ai/ \u2014 add that source in Sileo so it can resolve dependencies. Its server timed out during our 2026-10-26 checks; dependency availability is unverified. No dependencies are downloaded or installed secretly by this package.\n\nDownloads the pinned IPA, checks size and SHA-256, and runs appinst. Own game files required. Removing this wrapper leaves the app and its data installed. No uninstall or force-overwrite fallback.\n\n### Verification\nLocal installer tests and archive checks pass. Actual AppSync installation, app launch, gameplay, updates and reboot behavior are **untested**. An active compatible jailbreak is required; this is not TrollStore-style persistence. It will not silently migrate a TrollStore-managed copy. Read the Sileo log if installation fails."
+          "markdown": "## ZGTA V \u2014 AppSync installer\n**Build89 experimental candidate \u00b7 by zema.**\n\nOnly for compatible ARM64 rootful jailbreaks on iOS 15.0\u201318.2 without TrollStore. Not for RootHide or rootless. Prefer the separate TrollStore installer when supported.\n\nUses official **AppSync Unified (116.0+)** and **appinst (2.1.1+)** from https://cydia.akemi.ai/ \u2014 add that source in Sileo so it can resolve dependencies. Its server timed out during our 2026-10-26 checks; dependency availability is unverified. No dependencies are downloaded or installed secretly by this package.\n\nDownloads the pinned IPA, checks size and SHA-256, and runs appinst. Own game files required. Removing this wrapper leaves the app and its data installed. No uninstall or force-overwrite fallback.\n\n### Verification\nLocal installer tests and archive checks pass. Actual AppSync installation, app launch, gameplay, updates and reboot behavior are **untested**. An active compatible jailbreak is required; this is not TrollStore-style persistence. It will not silently migrate a TrollStore-managed copy. Read the Sileo log if installation fails."
         }
       ]
     },
@@ -18,6 +18,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer0.89-1 / App Build89\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,

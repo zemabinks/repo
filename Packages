@@ -19,42 +19,42 @@ SHA512: cd61b4d8f6ef9f41e2da8a4b1230487b12d183b761c7ed7138c112f1ca1d5d81dc88ae84
 
 Package: com.zema.zgta-v.trollstore
 Name: ZGTA V (TrollStore installer)
-Version: 0.88-2
+Version: 0.89-1
 Architecture: all
 Section: Applications
 Maintainer: ZEMA
 Author: zema
 Depends: firmware (>= 15.0), curl, coreutils
-Description: Build 88 candidate installer. Downloads the pinned ZGTA V IPA and installs it using your existing TrollStore helper. Requires compatible TrollStore or TrollStore Lite. Game files are supplied separately. Removing this installer does not delete the TrollStore app or its data.
+Description: Build 89 English-only and Game Files candidate installer. Downloads the pinned ZGTA V IPA and installs it using your existing TrollStore helper. Requires compatible TrollStore or TrollStore Lite. Game files are supplied separately. Removing this installer does not delete the TrollStore app or its data.
 Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
 SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
 Homepage: https://zemabinks.github.io/repo/#zgta-v
 Installed-Size: 0
-Filename: ./pool/com.zema.zgta-v.trollstore_0.88-2_all.deb
-Size: 2966
-MD5sum: bc0b85f77a2f1724def722904bc8573e
-SHA1: d2497f0fbeaa11c8c6449593e908e5114e5eb390
-SHA256: abb70b9683cf92c9c44359a2775a760374f7dfc4e45b13d193d9bd5e1829cb54
-SHA512: ef88a313c51583878eee9724e531199c70e6dc6d8df6525cb122596a8fd349e265097dde15c65ae7e2670dfdbc1be248f6ceb3c58754be68b6b685c311f771ca
+Filename: ./pool/com.zema.zgta-v.trollstore_0.89-1_all.deb
+Size: 3044
+MD5sum: 5b1b5c6610a8f369b9150148a73f2ee1
+SHA1: 3f2519e65dbc46677ea9f9f2df58aff909c4c3ed
+SHA256: 1366e60dcd472382f06ea3f58c789d7253da951753c6f368b5f4e0fe24d5c279
+SHA512: efccff67b9f0036e070cb6c1feb9582b4ea44db9d718baf2578d9a74ca9db3e2d2981ad7db10021a75b973e0f222f2f30ae1827f53542eb2ad87c1e3b8297b00
 
 Package: com.zema.zgta-v.appsync
 Name: ZGTA V (AppSync installer - experimental)
-Version: 0.88-1
+Version: 0.89-1
 Architecture: iphoneos-arm
 Section: Applications
 Maintainer: ZEMA
 Author: zema
 Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
 Conflicts: com.zema.zgta-v.trollstore
-Description: Experimental Build 88 fallback for compatible ARM64 rootful jailbreaks without TrollStore. Uses official AppSync Unified and appinst; add https://cydia.akemi.ai/ for dependencies. Not for RootHide or rootless. Actual app installation and gameplay on this route are untested. Own game files required; removing this wrapper leaves the app and data installed.
+Description: Experimental Build 89 fallback for compatible ARM64 rootful jailbreaks without TrollStore. Uses official AppSync Unified and appinst; add https://cydia.akemi.ai/ for dependencies. Not for RootHide or rootless. Actual app installation and gameplay on this route are untested. Own game files required; removing this wrapper leaves the app and data installed.
 Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
 SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
 Homepage: https://zemabinks.github.io/repo/#zgta-v
 Installed-Size: 0
-Filename: ./pool/com.zema.zgta-v.appsync_0.88-1_iphoneos-arm.deb
-Size: 2814
-MD5sum: 8c422d2872fac6e5c18f253ea775c07c
-SHA1: 8a9a3764190a2c9dc031725db5f248665af5b6bd
-SHA256: a8f63e12108b537d20cc442641b2b8c1513274a9169728d4cd535d0be5a158b7
-SHA512: 6b211db66e3e3d93ea660a634d4425680421d6a2242a59ba57bddb31e711de5ded76e772b3900c919dcc77eb98db8502fd3f455d85d0a25e6896f558990e5f61
+Filename: ./pool/com.zema.zgta-v.appsync_0.89-1_iphoneos-arm.deb
+Size: 2900
+MD5sum: f0a4fcf919355bffa37f339d54b6967e
+SHA1: 7e4b25f33d37f8b7a8971008cbf0d33c9f3197e6
+SHA256: 3130db7a0d64d9c6606727796797ed6e7383ed67cc68ff79be281fc8922f81a0
+SHA512: b86524518b7775f3b03b749ee92eba56ee6ca5d32546b6abefaa51233b2e99a4a3601ceafe6f0db41e8465295451a657357283a3d4c5aada3920f70a42b0532a
 

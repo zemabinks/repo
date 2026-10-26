@@ -8,8 +8,13 @@ def stage(destination:Path, flavor="trollstore"):
     assert not destination.exists(),destination
     catalog=json.loads((ROOT/'downloads/zgta-v.json').read_text())
     assert re.fullmatch(r'[a-f0-9]{64}',catalog['sha256'])
-    assert catalog['download_url']=='https://github.com/zemabinks/repo/releases/download/zgta-v-build-88/'+catalog['file']
-    assert catalog['bytes']==90997632 and catalog['build']==88
+    build=catalog['build']
+    assert type(build) is int and 1 <= build <= 1000000
+    assert type(catalog['bytes']) is int and 0 < catalog['bytes'] < 2**31
+    assert re.fullmatch(r'ZGTA-V-Build'+str(build)+r'-[A-Za-z0-9_.-]+\.ipa',catalog['file'])
+    release='https://github.com/zemabinks/repo/releases/'
+    assert catalog['release_url']==release+'tag/zgta-v-build-'+str(build)
+    assert catalog['download_url']==release+'download/zgta-v-build-'+str(build)+'/'+catalog['file']
     destination.mkdir(parents=True);destination.chmod(0o755);control=destination/'DEBIAN';control.mkdir();control.chmod(0o755)
     shutil.copy2(ROOT/f'package-sources/{flavor}-installer/control',control/'control')
     text=(ROOT/f'package-sources/{flavor}-installer/postinst.in').read_text()

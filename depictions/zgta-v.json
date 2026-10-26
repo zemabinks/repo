@@ -8,7 +8,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build 88 test candidate \u00b7 by zema.**",
+          "markdown": "## ZGTA V \u2014 TrollStore installer\n\n**Build89 test candidate \u00b7 by zema.**",
           "useSpacing": true
         },
         {
@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### RootHide correction \u2014 0.88-2\nThe first phone test of 0.88-1 failed to locate an existing TrollStore 2.1.1 installation; it stopped before downloading the IPA. This update fixes the documented /rootfs path, accepts upstream UID 33 or root ownership, and translates the IPA path when running in RootHide.\n\n20 local mocked installer tests and archive checks pass. Physical Sileo \u2192 TrollStore installation now passes on iPhone15Pro / iOS17.0 / TrollStore2.1.1 / RootHide. Xcode confirms Build88, and the user confirms the launcher opens. Gameplay, actual app-data upgrades, two-device multiplayer and reboot behavior are still untested. Keep TrollStore installed; send the Sileo log if it fails.\n\n### Updates and removal\nRemoving this small wrapper leaves the game and its data in place. Use TrollStore to remove the game itself. The app requires your own game files. No AppSync dependency is added to this package.",
+          "markdown": "### Build89\nEnglish-only interface; repaired folder search/rechecks and parent-folder archive access; default unpacking keeps the source archive. Saves, settings, original game/artwork resources and the V+Z icon are retained.\n\nLocal native build/package, discovery/extraction and Simulator checks pass. Actual Build89 phone installation, Files-provider access, gameplay, app-data upgrades and reboot behavior are pending. Build88 installation/launcher opening were confirmed separately using the same TrollStore helper interface.\n\nRemoving this wrapper leaves the app/data in place. Your own game files and an existing compatible TrollStore setup are required. No AppSync dependency.",
           "useSpacing": true
         }
       ]
@@ -30,7 +30,12 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "### Installer 0.88-2\n- Fix RootHide helper discovery through /rootfs.\n- Accept the UID 33 ownership used by upstream TrollStore, as well as UID 0.\n- Convert IPA paths for RootHide mirrored-helper cases.\n- Improve failure messages; do not claim TrollStore is absent when discovery fails.\n- Same Build 88 IPA and dependencies; phone retest pending."
+          "markdown": "### Installer0.89-1 / App Build89\n- Pin the English-only Game Files candidate IPA by exact bytes and SHA-256.\n- Retain the existing native installation interface and dependencies.\n- Current phone test pending; older installation evidence remains labelled Build88."
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.88-2\n- Fix RootHide helper discovery through /rootfs.\n- Accept the UID 33 ownership used by upstream TrollStore, as well as UID 0.\n- Convert IPA paths for RootHide mirrored-helper cases.\n- Improve failure messages; do not claim TrollStore is absent when discovery fails.\n- Same Build 88 IPA and dependencies; installation and launcher opening subsequently confirmed on the tested phone."
         },
         {
           "class": "DepictionMarkdownView",
