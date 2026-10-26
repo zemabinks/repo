@@ -32,8 +32,12 @@ Fresh downloads from the official dependency server could not be verified during
 
 The same `.ipa` is the input for these signing tools; use the [sideloading guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) for steps and limits. These ZGTA V routes remain experimental. Use `.ipa`, not a Sileo `.deb` or TrollStore `.tipa`.
 
+## Remote multiplayer
+
+Follow [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md) for phone/PC downloads, access invitations and step-by-step hosting/joining.
+
 ## Downloads and support
 
-[ZGTA V 2.0 beta](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.1) has the IPA, browser packages and source. [Native Build 91](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-91) contains Sileo installers, checksums and technical verification. Native version **2.0 / Build 91** is unchanged by these documentation updates.
+[ZGTA V 2.0 beta](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) has the IPA, browser packages and source. [Native Build 91](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-91) contains Sileo installers, checksums and technical verification. Native version **2.0 / Build 91** is unchanged by these documentation updates.
 
 If installation fails, share the exact Sileo error. For an in-app problem, use **Settings → Saves & support → Share log**. Review personal paths and addresses before posting; do not upload game files or private saves.

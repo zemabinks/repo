@@ -16,7 +16,7 @@ By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
 **Requires iOS / iPadOS 15.0 or later** and your own matching prepared game files. TrollStore / TrollStore Lite must support your exact device and iOS version.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-91/ZGTA-V-Build91-Archive-Access-TrollStore.ipa) · [All platform downloads](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.1) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-91/ZGTA-V-Build91-Archive-Access-TrollStore.ipa) · [All platform downloads](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
 
 In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.91-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
 

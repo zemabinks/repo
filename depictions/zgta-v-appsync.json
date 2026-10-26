@@ -11,6 +11,11 @@
           "class": "DepictionMarkdownView",
           "useSpacing": true,
           "markdown": "## ZGTA V — AppSync installer\n\n**2.0 beta · by zema · experimental**\n\nFor compatible **ARM64 rootful jailbreaks on iOS 15.0–18.2**. Not for RootHide or rootless. Own prepared game files required.\n\nAdd `https://cydia.akemi.ai/` in Sileo for **AppSync Unified 116.0+** and **appinst 2.1.1+**. Install with a compatible jailbreak active. Dependency availability and ZGTA V installation/gameplay through AppSync remain unverified.\n\nUse the separate TrollStore installer if you already use compatible TrollStore. Removing this installer leaves the app/data installed.\n\n[Installation and compatibility](https://github.com/zemabinks/repo/blob/main/docs/zgta-v-installation.md) · [Other sideloaders](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md)"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "[Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md) — downloads, setup, host and join steps."
         }
       ]
     },
