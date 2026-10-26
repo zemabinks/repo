@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### Updates and removal\nTrollStore updates the existing app bundle. Keep the app and its game files/saves. Removing this installer package leaves the TrollStore app and its data in place; manage app removal in TrollStore.\n\n### Verification\n15 local installer tests (including AppSync fallback cases) and Debian archive checks pass. Actual Sileo \u2192 TrollStore installation on a phone is still pending. If installation fails, send the Sileo log. This package uses only TrollStore. A separate experimental AppSync package is available for compatible rootful jailbreaks; it is not needed on your TrollStore device.",
+          "markdown": "### RootHide correction \u2014 0.88-2\nThe first phone test of 0.88-1 failed to locate an existing TrollStore 2.1.1 installation; it stopped before downloading the IPA. This update fixes the documented /rootfs path, accepts upstream UID 33 or root ownership, and translates the IPA path when running in RootHide.\n\n20 local mocked installer tests and archive checks pass. Actual installation with the correction still needs a phone retest. Keep TrollStore installed; send the Sileo log if it fails.\n\n### Updates and removal\nRemoving this small wrapper leaves the game and its data in place. Use TrollStore to remove the game itself. The app requires your own game files. No AppSync dependency is added to this package.",
           "useSpacing": true
         }
       ]
@@ -27,6 +27,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.88-2\n- Fix RootHide helper discovery through /rootfs.\n- Accept the UID 33 ownership used by upstream TrollStore, as well as UID 0.\n- Convert IPA paths for RootHide mirrored-helper cases.\n- Improve failure messages; do not claim TrollStore is absent when discovery fails.\n- Same Build 88 IPA and dependencies; phone retest pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### Installer 0.88-1\n- Initial Sileo \u2192 TrollStore candidate.\n- Pinned Build 88 download and integrity checks.\n- Native TrollStore install/custom interface; no force flag.\n- Installer removal preserves the app and data.",

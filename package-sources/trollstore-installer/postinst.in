@@ -15,28 +15,34 @@ fail() { say "ERROR: $*" >&2; exit 1; }
 
 find_helper() {
     helper=''
-    # RootHide exposes the real system through /.sysroot. Prefer its real
-    # TrollStore container to a bootstrap mirror; never install an app manually.
-    for base in /.sysroot/var/containers/Bundle/Application /var/containers/Bundle/Application /private/var/containers/Bundle/Application; do
+    roothide=0
+    if command -v jbroot >/dev/null 2>&1 && [ -d /rootfs ]; then roothide=1; fi
+    # RootHide documents /rootfs as the real iOS filesystem. /.sysroot is
+    # bootstrap implementation data, not the real TrollStore container view.
+    for base in /rootfs/var/containers/Bundle/Application /rootfs/private/var/containers/Bundle/Application /var/containers/Bundle/Application /private/var/containers/Bundle/Application; do
+        case "$base" in /rootfs/*) [ "$roothide" = 1 ] || continue ;; esac
         count=0
         for app in "$base"/*/TrollStore.app; do
             candidate="$app/trollstorehelper"
             [ -f "$app/Info.plist" ] && [ -f "$candidate" ] && [ -x "$candidate" ] && [ ! -L "$candidate" ] || continue
             owner=$(stat -c %u "$candidate" 2>/dev/null || stat -f %u "$candidate" 2>/dev/null) || continue
-            [ "$owner" = 0 ] || continue
+            # Upstream fixPermissionsOfAppBundle sets installed files to UID 33.
+            # A persistence-helper copy may be UID 0. Do not chown either copy.
+            case "$owner" in 0|33) ;; *) say "Skipping helper with unexpected owner UID $owner." >&2; continue ;; esac
             count=$((count + 1)); helper="$candidate"
         done
         [ "$count" -le 1 ] || fail 'More than one TrollStore helper was found. Resolve old TrollStore copies before retrying.'
         [ "$count" -eq 0 ] || return 0
     done
-    for app in /.sysroot/var/jb/Applications/TrollStoreLite.app /.sysroot/Applications/TrollStoreLite.app /var/jb/Applications/TrollStoreLite.app /Applications/TrollStoreLite.app; do
+    for app in /rootfs/var/jb/Applications/TrollStoreLite.app /rootfs/Applications/TrollStoreLite.app /var/jb/Applications/TrollStoreLite.app /Applications/TrollStoreLite.app; do
+        case "$app" in /rootfs/*) [ "$roothide" = 1 ] || continue ;; esac
         candidate="$app/trollstorehelper"
         [ -f "$app/Info.plist" ] && [ -f "$candidate" ] && [ -x "$candidate" ] && [ ! -L "$candidate" ] || continue
         owner=$(stat -c %u "$candidate" 2>/dev/null || stat -f %u "$candidate" 2>/dev/null) || continue
-        [ "$owner" = 0 ] || continue
+        case "$owner" in 0|33) ;; *) say "Skipping helper with unexpected owner UID $owner." >&2; continue ;; esac
         helper="$candidate"; return 0
     done
-    fail 'TrollStore or TrollStore Lite was not found. Install a compatible version first, then retry this package.'
+    fail "No usable TrollStore helper was found (RootHide view: $roothide). This does not prove TrollStore is absent. Keep TrollStore installed and send this Sileo log; do not delete your app or data."
 }
 
 install_app() {
@@ -45,9 +51,7 @@ install_app() {
         command -v "$command" >/dev/null 2>&1 || fail "Missing $command. Repair package dependencies and retry."
     done
     find_helper
-    case "$helper" in /.sysroot/*)
-        command -v jbroot >/dev/null 2>&1 || fail 'The RootHide jbroot path helper is missing.'
-        ;; esac
+    say "Found TrollStore helper (owner UID $owner; RootHide view: $roothide)."
     work=$(mktemp -d /var/tmp/zema-trollstore.XXXXXXXX) || fail 'Cannot create a private download directory.'
     trap 'rm -rf "$work"' EXIT HUP INT TERM
     ipa="$work/payload.ipa"
@@ -67,10 +71,12 @@ install_app() {
     actual=$(sha256sum "$ipa"); actual=${actual%% *}
     [ "$actual" = "$EXPECTED_SHA256" ] || fail 'The downloaded SHA-256 does not match. Installation was not started.'
     native_ipa="$ipa"
-    case "$helper" in /.sysroot/*)
+    # Even a mirrored /var helper is native, so convert the IPA whenever the
+    # calling shell uses RootHide's virtual filesystem, not just for /rootfs.
+    if [ "$roothide" = 1 ]; then
         native_ipa=$(jbroot "$ipa") || fail 'Cannot resolve the IPA outside RootHide.'
         case "$native_ipa" in /*) ;; *) fail 'RootHide returned an invalid IPA path.' ;; esac
-        ;; esac
+    fi
     say 'Installing through the existing TrollStore helper…'
     # This is the same install/custom interface used by TrollStore itself.
     # No force flag, app-container deletion, global uicache or uninstall fallback.

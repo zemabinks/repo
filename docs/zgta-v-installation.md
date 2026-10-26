@@ -2,10 +2,18 @@
 
 This is a **candidate**, by **zema**. It is not the audited public 2.0 release yet. Your own game files are required. These small `.deb` packages install the same pinned IPA; they do not contain the game files. Keep your existing game app, files and saves when updating.
 
+## Fix for the RootHide installation error
+
+Installer **0.88-1** was tested on an iOS 17.0 phone with **TrollStore 2.1.1 already installed**, but failed to find its helper before downloading the IPA. The game was not installed. That error did not prove TrollStore was missing.
+
+Refresh Zema's Repo and upgrade/reinstall **ZGTA V (TrollStore installer)** using **0.88-2**. Keep TrollStore installed. The new script uses RootHide's documented `/rootfs` view, accepts helper ownership UID 0 or 33 as used by upstream, and translates the IPA path whenever running in RootHide. It does not change helper ownership or filesystem permissions. Twenty local mocked tests pass; the new package still needs a physical-phone retest.
+
+The curl, libc-ares2, libcurl4, libnghttp2-14, librtmp1 and libssh2-1 packages shown by Sileo are the download tool and its networking dependencies. The 0.88-2 correction adds no dependencies. Leave those libraries installed; other software may use them. The yellow warning about a missing Maintainer field in an unrelated package was not the reported ZGTA V failure.
+
 ## Your iPhone already has TrollStore or TrollStore Lite
 
 1. Add `https://zemabinks.github.io/repo/` to Sileo, or refresh that source.
-2. Search for **ZGTA V (TrollStore installer)** and install it.
+2. Search for **ZGTA V (TrollStore installer)** and install/update to **0.88-2**.
 3. Let the download and native installation finish. Open **ZGTA V** afterward.
 
 No AppSync package is needed for this route. It uses the helper from your installed TrollStore, verifies the exact IPA size and SHA-256, and waits for its result. It does not force a same-identifier app installed by another method to be overwritten. If the helper cannot execute from your bootstrap, installation stops with a Sileo error. Send that log; do not delete your game or reset data.
@@ -40,10 +48,12 @@ SHA-256: `4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d`
 - Local native ARM64 package and Simulator UI/logic checks passed for Build 88.
 - Installer shell tests use isolated mock helpers; they do **not** prove device installation.
 - Debian archives contain only control metadata and a post-install script, with no app payload, uninstall scripts, game data or bundled native helpers.
-- Actual Sileo → TrollStore installation and physical-device acceptance remain pending. Live two-device gameplay, real updates and reboot behavior remain pending.
+- The 0.88-1 phone installation failed at helper discovery; 0.88-2 physical-device retest remains pending. Live two-device gameplay, real updates and reboot behavior remain pending.
 - Installation method does not establish complete jailbreak/iOS/device compatibility.
 
 ## Upstream interfaces checked
+
+- [RootHide filesystem view](https://github.com/roothide/Developer/blob/c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b/roothide.md) and [path-conversion interfaces](https://github.com/roothide/Developer/blob/c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b/interface.md).
 
 - [TrollStore helper source](https://github.com/opa334/TrollStore/blob/88424f683b2a08f34a3f88985f790f97d84ce1df/RootHelper/main.m): `install custom <IPA>`; no force argument.
 - [Official appinst usage](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/README.md) and [dependency identifiers](https://github.com/akemin-dayo/AppSync/blob/235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a/appinst/control).

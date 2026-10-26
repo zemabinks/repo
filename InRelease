@@ -8,32 +8,32 @@ Codename: ios
 Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e all
 Components: main
-Date: Sun, 25 Oct 2026 23:47:33 GMT
+Date: Mon, 26 Oct 2026 00:11:19 GMT
 Description: Zema's iOS tweaks, apps and ports
 MD5Sum:
- 8b03e67afb07d3030ebdd43e2b883943             3236 Packages
- e2c0b5d899172a8c6cfdb88800c0b934             1509 Packages.gz
- f6bae275754d54032d7e530a4899ffbc             1639 Packages.bz2
- 7b8f293616d505bbf9761943b9690d12             1548 Packages.xz
+ cd0074fe5d045dcae320e73946f08cfa             3236 Packages
+ 834b267ce0656f36c2965b05263c3ad8             1509 Packages.gz
+ 3197b0eee1f5ebeef76f2e7baa068c37             1641 Packages.bz2
+ c1a6e050e2ad9a9afbf94ab6334eacc0             1548 Packages.xz
 SHA1:
- fc2338dc5b043e23dcb3cef61c5396a72fba72cf             3236 Packages
- 6bd77909885a8482b704c48434bb5e75f26bb2a6             1509 Packages.gz
- 6e1be822af27684576a7e47c1f3f26131d7edf3e             1639 Packages.bz2
- 0567bf7a5961175a0b0416276c6ef8845eb0117b             1548 Packages.xz
+ 277aeb2c23d259008c240cfa84c7a10fab933209             3236 Packages
+ e2d9e534a90f680c9bf45f49dd2403ecc9aeb6b2             1509 Packages.gz
+ 19ca350de724d2e6b57c8fd93152df3abde36270             1641 Packages.bz2
+ 73e1cd9a36994fffa1d738c89170893eddb57196             1548 Packages.xz
 SHA256:
- 400860bd3315e2ac394cca2a09d649035a819ac26f8f92b4623b1afcff9bbf4c             3236 Packages
- a401fc1ce613f8d70809e5f5ef08935ffc75015780645fef0488f868e2d81708             1509 Packages.gz
- c56d60d1d3d534c74100e16ea403f7929ec4d8f1dfeefca4629fcb4758f3ec51             1639 Packages.bz2
- 40b5b2daa03a5a5cd9c1ba02aeaa4ee76e500ce0d91dfc69a6616589a0474dda             1548 Packages.xz
+ 0c160c81d17f44db00c21da53493c30f5a79b29292e12942f08671a4760e002b             3236 Packages
+ c8dda3429ea20b89853bcc9645dc41b68fb8b7a9593e2299e25bd14702c45b8b             1509 Packages.gz
+ 1b65bc894dfa720aad607bc8ebc4fd0f9332b7a396e04fa5311ddaccf6fab622             1641 Packages.bz2
+ 1a690566230b5e17009cbda3ed478ac0d96d9a32d8fabdac5400166a4674b540             1548 Packages.xz
 SHA512:
- ed98c7b9b6e64800e75227095a09406c34291f541474721c4d0a86b48598bc8319ecb31d053a7cf92d307b3dc137315b564657a60535a86f7030559ad5a3a929             3236 Packages
- cb7070b49a84a9f4d1e87205f31d094d71b8bd2e311570826487552deaf9e3974c1f7181fa2b1113533b9edca1ab28da04f0c539c54b0de267c6820de2347b24             1509 Packages.gz
- 7134b0269110ec91daf40d6039a7b3c98aa9fa4284d2ad91df7f3369d7407578f1931acd33ed6e9ea6af0b4bc6347eddf445191ca9bdea76467ca66163c3da92             1639 Packages.bz2
- e4d996052473ec6c23c3995afe253f59b6bd9ea2bfdeeed1bbfa2c7cc42428de012800b28451248db42e435db174d17fcbcdebfa27c2ffad293f7a574252b847             1548 Packages.xz
+ 0c37e451134162a64cf42768811edb7ec93c9088f42298093f748714d685b61424f8808c931d7641926bfd347bdc0bc4f4deefe4a642c332a2172dfc9ee4cd0a             3236 Packages
+ e3d0a0821a57e3b9bebe490097ca3f6491064fe2b8802aee0d4af5bf3d2104a48f5ec1f5606b2672605a7b195012e51a911a7c01776f3b23375c7ce7973b6bae             1509 Packages.gz
+ 831a93a9a4a6308dfbd53b450ccac5ee04cc05d757c09404f17be7171974a0117c5e594f44d49b09d5149ac4acc54745744ff549d969db92b46b1a449e7e98bc             1641 Packages.bz2
+ 6e6d80692b9c48fe7cf1386fdd1965bbe7450adef149d70d74de05dd8bbead9ce52bf8cbea894cc65cf27d06cc0d1b08a0066362897067254a494320a4b5cb9d             1548 Packages.xz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQ2m51B07zqJSCyLCvZrRiXKVxtBQUCat6VLQAKCRDZrRiXKVxt
-BRNrAPwN2Mgxbs2NAOJQhKD/5QdS+Yl+ZcAcgVHUI/ABM3UeHwD/T0wGW1NjI/Qx
-K9weW59KxH14yloXdprowKtV+hTCtA4=
-=VMqs
+iHUEARYKAB0WIQQ2m51B07zqJSCyLCvZrRiXKVxtBQUCat6a1wAKCRDZrRiXKVxt
+BS84AQC5GASlI3wYh/Gw6MdeKPoQcx9qayLzds/ejbSUUrwvHQEA9Nsy/HwULBJI
+1cbfCG/l+hNz2ltyn90dv++ryCeiYA4=
+=1sSD
 -----END PGP SIGNATURE-----

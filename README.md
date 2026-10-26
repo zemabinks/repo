@@ -20,9 +20,11 @@ By **zema**. Pure Black launcher, fully clickable Home cards and separate Online
 
 | Your setup | Package | Requirements and status |
 | --- | --- | --- |
-| Existing compatible TrollStore / TrollStore Lite | **ZGTA V (TrollStore installer)** | Preferred route. Uses the existing helper; no AppSync dependency. Physical installation test pending. |
+| Existing compatible TrollStore / TrollStore Lite | **ZGTA V (TrollStore installer)** | Preferred route. Uses the existing helper; no AppSync dependency. 0.88-2 corrects the observed RootHide discovery failure; phone retest pending. |
 | No TrollStore; compatible ARM64 rootful jailbreak | **ZGTA V (AppSync installer - experimental)** | iOS 15.0–18.2; official AppSync Unified and appinst dependencies. Not for RootHide or rootless. Device installation/gameplay untested. |
 | Neither supported method | No supported Sileo installer yet | Do not install arbitrary AppSync conversions. |
+
+**RootHide correction:** update the TrollStore wrapper to **0.88-2**. Version 0.88-1 failed to find an existing TrollStore installation and stopped before the IPA download. The fix uses the documented `/rootfs` view and accepts upstream helper ownership (UID 0 or 33). It also converts the IPA path for RootHide even if the helper is reached through mirrored `/var`. Twenty local mocked tests pass; the corrected package still needs a phone installation test.
 
 [Installation and compatibility guide](docs/zgta-v-installation.md). Both wrappers download the exact IPA above, check its size/SHA-256, and wait for the native installer result. Removing a wrapper leaves the game and its data installed. They do not uninstall the game or force an installation-method migration.
 

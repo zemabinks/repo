@@ -1,16 +1,16 @@
 {
   "archive_checks_pass": true,
-  "local_test_methods_passed": 15,
-  "local_test_scenarios_passed": 26,
+  "local_test_methods_passed": 20,
+  "local_test_scenarios_passed": 31,
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.88-1_all.deb",
-      "bytes": 2690,
-      "sha256": "3d68bce387c8f23facdcd3bbf9e1d0e54c26c7f9c2e5ed46506012754c898707",
+      "file": "com.zema.zgta-v.trollstore_0.88-2_all.deb",
+      "bytes": 2966,
+      "sha256": "abb70b9683cf92c9c44359a2775a760374f7dfc4e45b13d193d9bd5e1829cb54",
       "source_inputs_sha256": {
-        "control": "458e5cd9c5d0195cbad1f516b2acb8068b2fc754efe0a299104018f5579e14cb",
-        "postinst": "d495ceed37b745decb05825c13e4d283b7f2ffa597f9eb79d2a4e8706a9c0d5a"
+        "control": "ab9cbd6b18183065f405a1acc86e3a2b12a537732bff392f87d47fbfc9f4a6cb",
+        "postinst": "d2b49f487356ec1cbed46be1455f89c19256572a98e7204c94dd7db6a60e9845"
       },
       "device_install_verified": false
     },
@@ -31,5 +31,14 @@
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
   "app_build_source_commit": "8642914a2a7565d0fe190887e1e3123d6df5483d",
-  "app_ipa_sha256": "4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d"
+  "app_ipa_sha256": "4dd7a1135c490747b3089f332c6f7573b1a70c8f87ccf4a4430123d8b0488d9d",
+  "observed_device_failure": {
+    "version": "0.88-1",
+    "stage": "helper discovery before download",
+    "TrollStore_installed": "2.1.1",
+    "ZGTA_V_installed": false,
+    "source_fixes": "0.88-2 corrects /rootfs lookup, accepts official UID 33 ownership, converts native IPA paths in a RootHide context",
+    "phone_retest_pending": true
+  },
+  "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b"
 }
