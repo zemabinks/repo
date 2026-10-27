@@ -1,26 +1,25 @@
 {
   "archive_checks_pass": true,
-  "local_test_methods_passed": 20,
-  "local_test_scenarios_passed": 31,
+  "local_test_methods_passed": 23,
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.96-1_all.deb",
-      "bytes": 3048,
-      "sha256": "cde239e99e27d9ca49de898a897d9d54a7825739f62477e5795899fa656e1277",
+      "file": "com.zema.zgta-v.trollstore_0.97-1_all.deb",
+      "bytes": 3040,
+      "sha256": "9198af7124d7ea12e16dbe9543619e6ec191918362b57cd373bc3e1b1e126db7",
       "source_inputs_sha256": {
-        "control": "c2f5b59d4ac0e434e8dd29f97fb91272428db8124329c77d8bdf7001c97b39d5",
-        "postinst": "0156079752e4919502a49802af6b1e11a2eb16613def06f35ebfc515f9940111"
+        "control": "2f3658074bd07c7b876ebd27b1adc6ff7f470ee94030bb18af2591af11d13e21",
+        "postinst": "5dcfc06e24ed1ec3c9b47852bdc9520dd4d84f0bfe4426aee854befb5cf9d6ea"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.96-1_iphoneos-arm.deb",
-      "bytes": 2892,
-      "sha256": "16b610e2619294c866582d6bad84d55daaa6a0cf382a3fab4133fb0f9fd17fe2",
+      "file": "com.zema.zgta-v.appsync_0.97-1_iphoneos-arm.deb",
+      "bytes": 2888,
+      "sha256": "1bbdd232a737f4dbfceb6b151f4de4340a5e2657c46c12665180e272799979ee",
       "source_inputs_sha256": {
-        "control": "8789d246dd1199ca0d24118fc37fab85264928fb7fd3f973cebb4bd4ba597db5",
-        "postinst": "ff245be6fd65e8668ee9909516d473e0e23b5950b88d3e28ace91618dbf722f1"
+        "control": "8675c6bda6eb39a04660d82ce5cc645cc0ed041d4f45122e8acd42ed76c96183",
+        "postinst": "7db64d605cba8386337d7f53cfa5f2e6fef361dc4f4ac67dd09f465ee9b4c003"
       },
       "device_install_verified": false
     }
@@ -30,8 +29,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "bef84c0329652409279a8e6ff62a8197be2ed8a9",
-  "app_ipa_sha256": "a1cc1032353b9531599944bf1d012dc556732ed1acc9d6249ef43c9c9a9fcd71",
+  "app_build_source_commit": "f30a622a0c869e7119d30eb317e9037684db4df6",
+  "app_ipa_sha256": "6581b48a0fab87fd690b4db04abe3acbb373bcd14a17345bff95ff4c515c5711",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -43,17 +42,18 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "Build90 Sileo/TrollStore app replacement and folder scanning confirmed from owner logs; provider archive read fails with EPERM",
-  "current_build": 96,
-  "current_installer_version": "0.96-1",
+  "current_build": 97,
+  "current_installer_version": "0.97-1",
   "current_phone_install_test_pending": true,
-  "installer_template_tests": "Existing unchanged helper templates;23 local test methods and actual Debian archive pins verified separately.",
+  "installer_template_tests": "23 existing local test methods passed on Ra1nbox Linux; actual97 Debian archive contents and pins verified.",
   "observed_archive_read_failure": {
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
     "build91_provider_retest_pending": false
   },
-  "current_phone_install_test_scope": "Build96 Sileo phone upgrade and paired gameplay are deferred by owner. Local wrappers retain the previously working helper templates and pin exact Build96 IPA bytes.",
+  "current_phone_install_test_scope": "Build97 Sileo phone upgrade, LAN discovery and gameplay pending. The owner explicitly requested updated IPAs through this source for testing.",
   "previous_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
-  "local_test_environment": "Ra1nbox Linux with isolated mock commands; existing 23 test methods passed. Mac catalog/index tests passed; Mac AppSync success fixture exceeded its 10-second limit."
+  "local_test_environment": "Ra1nbox Linux using isolated mock commands;23 test methods passed. Mac catalog/index tests passed. Actual phone installation was not performed.",
+  "upgrade_version_comparison": "0.97-1 >0.96-1 PASS"
 }

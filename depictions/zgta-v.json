@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 96 candidate \u00b7 Installer 0.96-1**\n\nRevised bounded multiplayer host-broadcast sizing. Local build/package and Chrome single-client entry/reconnect checks pass. Paired iPhone/browser and small-job tests remain pending. Existing archive access, icons, game files and saves are preserved."
+          "markdown": "**Build 97 candidate \u00b7 Installer 0.97-1**\n\nImproved nearby LAN lobby discovery and refresh. Local build and package checks pass; iPhone discovery and gameplay testing are still pending."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.97-1 / App Build 97\n- Improve nearby LAN lobby discovery, retries and refresh.\n- Install the verified Build97 IPA.\n- Phone installation, discovery and gameplay testing pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,

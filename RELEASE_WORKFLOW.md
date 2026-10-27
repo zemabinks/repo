@@ -1,5 +1,7 @@
 # ZGTA V development and release workflow
 
+**Current Sileo delivery rule:** the later owner clarification below authorizes updated candidate IPAs in this Sileo source. The earlier public-release gate continues to apply to the official ZGTA V project release.
+
 ## Development and public-release rule — owner instruction, 27 October 2026
 
 This rule supersedes any earlier wording that automatically publishes every native build or treats keeping GitHub updated as permission to promote a development candidate.
@@ -14,14 +16,14 @@ This rule supersedes any earlier wording that automatically publishes every nati
 - Public channels stay on the last explicitly approved build. Keep development indexes current privately; never advertise an unapproved candidate as the public current build. Record candidate identity, owner results, outstanding gaps and the publication answer in the private release receipt and UPM evidence.
 - Correcting release policy text alone does not approve or promote application changes. This clarification does not retroactively approve already published Build96, authorize a rollback, or establish any missing device test result.
 
-## Synchronize Sileo after an approved public iOS release
+## Standing Sileo update instruction — owner clarification, 27 October 2026
 
-The public-release rule above is the prerequisite. Only after the owner's yes for a tested candidate should `zemabinks/repo` serve its matching IPA. A private development build does not trigger a public Sileo update.
+The owner requested “always upload the IPA when updated to my repo” and explicitly clarified “My Sileo source.” This later instruction authorizes distributing each successfully packaged iOS update through `zemabinks/repo`, including test candidates, without a separate routine publication question. It supersedes the Sileo restriction in the earlier rule above. The official public `zemabinks/ZGTA-V` release gate remains in place. Sileo delivery does not establish phone acceptance or stable status.
 
-1. Mirror the approved exact IPA and checksum in the owned Sileo repository release. Match the approved build, byte count, SHA-256 and source revisions.
-2. Increment both installer versions and build the existing TrollStore and experimental AppSync templates with the approved IPA's URL, size and hash. Preserve installation methods, app data and previous package versions.
-3. Update catalogs, depictions, README, landing page and installation guide together. Keep historical device confirmations labeled with their actual build.
-4. Regenerate package indexes; sign Release and InRelease with the existing key. Verify signatures, index hashes, archive contents and preserved older stanzas.
-5. Publish the approved source/assets, then read back the live catalogs, signed indexes, packages and IPA bytes. Report the advertised version and accurate verification limits.
+1. Mirror the exact verified IPA and checksum in this repository's release. Preserve its build number, byte count, SHA-256 and source revision.
+2. Increment both existing installer versions and pin that same IPA URL, size and hash. Preserve installation methods, app data and all previous package versions.
+3. Update catalogs, depictions, README, landing page and installation guide together. Clearly label candidates and outstanding device tests; keep historical confirmations tied to their actual build.
+4. Regenerate package indexes and sign Release/InRelease using the existing key. Verify signatures, archive pins, index hashes and retained old stanzas.
+5. Read back the live catalogs, signed indexes, packages and actual IPA bytes. Report the advertised installer version and remaining device checks.
 
 Use existing keys and credentials. Never export private keys or infer physical installation/gameplay from fixtures. No paid hosted runner, billing change or new service is required.
