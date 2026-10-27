@@ -4,22 +4,22 @@
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.97-1_all.deb",
-      "bytes": 3040,
-      "sha256": "9198af7124d7ea12e16dbe9543619e6ec191918362b57cd373bc3e1b1e126db7",
+      "file": "com.zema.zgta-v.trollstore_0.98-1_all.deb",
+      "bytes": 3052,
+      "sha256": "6052361f2e36ee290703e15bda24c264d232071e60d6784f061f0ad1911f07e3",
       "source_inputs_sha256": {
-        "control": "2f3658074bd07c7b876ebd27b1adc6ff7f470ee94030bb18af2591af11d13e21",
-        "postinst": "5dcfc06e24ed1ec3c9b47852bdc9520dd4d84f0bfe4426aee854befb5cf9d6ea"
+        "control": "1c2d1dd6209bebd96424456a7318082951007de2b5d3b2d10f0a8ab9e8984a01",
+        "postinst": "c173a3b23867efbb5b2d9aff11122a894ac55b64b6937a2a5e0ad9288a7f68da"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.97-1_iphoneos-arm.deb",
-      "bytes": 2888,
-      "sha256": "1bbdd232a737f4dbfceb6b151f4de4340a5e2657c46c12665180e272799979ee",
+      "file": "com.zema.zgta-v.appsync_0.98-1_iphoneos-arm.deb",
+      "bytes": 2904,
+      "sha256": "41e7c24c8e2823a49832451a29aa6c6412680825b0dc4348986e0b472c5ba087",
       "source_inputs_sha256": {
-        "control": "8675c6bda6eb39a04660d82ce5cc645cc0ed041d4f45122e8acd42ed76c96183",
-        "postinst": "7db64d605cba8386337d7f53cfa5f2e6fef361dc4f4ac67dd09f465ee9b4c003"
+        "control": "1fc6dbb0809593dd96afc013767ea2bae946d6e22808fde4853aa6b0ae7619c3",
+        "postinst": "ca27d468a323ffc923cc567a9d060169b8593e89ee040af6df1759c11cd2951f"
       },
       "device_install_verified": false
     }
@@ -29,8 +29,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "f30a622a0c869e7119d30eb317e9037684db4df6",
-  "app_ipa_sha256": "6581b48a0fab87fd690b4db04abe3acbb373bcd14a17345bff95ff4c515c5711",
+  "app_build_source_commit": "c57f0c1e1a0e4164510ca1809c90c4cf7d4a2df3",
+  "app_ipa_sha256": "4f23bfe420fd8a1d1a6e749d8f31e5033e0f957adf800e059226c090f6a5a8c2",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -42,18 +42,18 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "Build90 Sileo/TrollStore app replacement and folder scanning confirmed from owner logs; provider archive read fails with EPERM",
-  "current_build": 97,
-  "current_installer_version": "0.97-1",
+  "current_build": 98,
+  "current_installer_version": "0.98-1",
   "current_phone_install_test_pending": true,
-  "installer_template_tests": "23 existing local test methods passed on Ra1nbox Linux; actual97 Debian archive contents and pins verified.",
+  "installer_template_tests": "23 existing installer fixture methods passed on Ra1nbox Linux; final98 Debian archive contents and size/SHA pins verified.",
   "observed_archive_read_failure": {
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
     "build91_provider_retest_pending": false
   },
-  "current_phone_install_test_scope": "Build97 Sileo phone upgrade, LAN discovery and gameplay pending. The owner explicitly requested updated IPAs through this source for testing.",
+  "current_phone_install_test_scope": "Build98 phone update/gameplay, first-use fade shaders, paired multiplayer and sustained thermal results pending.",
   "previous_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
-  "local_test_environment": "Ra1nbox Linux using isolated mock commands;23 test methods passed. Mac catalog/index tests passed. Actual phone installation was not performed.",
-  "upgrade_version_comparison": "0.97-1 >0.96-1 PASS"
+  "local_test_environment": "Ra1nbox Linux with isolated mocked commands;23 methods passed. Mac catalog/index tests pass. Actual phone installation not performed.",
+  "upgrade_version_comparison": "0.98-1 >0.97-1 PASS"
 }

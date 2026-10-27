@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 97 candidate \u00b7 Installer 0.97-1**\n\nImproved nearby LAN lobby discovery and refresh. Local build and package checks pass; iPhone discovery and gameplay testing are still pending."
+          "markdown": "**Build 98 candidate \u00b7 Installer 0.98-1**\n\nShared shader constants, reduced duplicate CPU staging in the browser, corrected night street-light uploads and missing full-body ped fade coverage. Local build, shader and package checks pass. Physical iPhone/gameplay and sustained performance testing remain pending; no measured FPS gain is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.98-1 / App Build 98\n- Share duplicate shader constant storage.\n- Correct night-light upload hints and missing ped fade coverage.\n- Compile first-use native fade variants in the background.\n- Install the verified Build98 IPA; gameplay and thermal results pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
