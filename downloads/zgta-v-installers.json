@@ -4,22 +4,22 @@
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.98-1_all.deb",
-      "bytes": 3052,
-      "sha256": "6052361f2e36ee290703e15bda24c264d232071e60d6784f061f0ad1911f07e3",
+      "file": "com.zema.zgta-v.trollstore_0.99-1_all.deb",
+      "bytes": 3044,
+      "sha256": "59e18ccac9d9ff7df8c5fd2fdc6f136861ed3d68afaf90595f949b1918c5b7ba",
       "source_inputs_sha256": {
-        "control": "1c2d1dd6209bebd96424456a7318082951007de2b5d3b2d10f0a8ab9e8984a01",
-        "postinst": "c173a3b23867efbb5b2d9aff11122a894ac55b64b6937a2a5e0ad9288a7f68da"
+        "control": "db0b095ed631b97e7eaad3a63d20788e2df7e4e73998b42559610cdb55a59671",
+        "postinst": "5d26aaed66c677fe417f4f0f93f0d46f05073115eca53fd04082d604d4d074bd"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.98-1_iphoneos-arm.deb",
-      "bytes": 2904,
-      "sha256": "41e7c24c8e2823a49832451a29aa6c6412680825b0dc4348986e0b472c5ba087",
+      "file": "com.zema.zgta-v.appsync_0.99-1_iphoneos-arm.deb",
+      "bytes": 2896,
+      "sha256": "4919b52453af17cf5f2036eeee1594a9e50fbbc096d2dbf67510271a2e842e47",
       "source_inputs_sha256": {
-        "control": "1fc6dbb0809593dd96afc013767ea2bae946d6e22808fde4853aa6b0ae7619c3",
-        "postinst": "ca27d468a323ffc923cc567a9d060169b8593e89ee040af6df1759c11cd2951f"
+        "control": "b249e56e6a029f4724e2d9883236fd52a2d97e2623c049cc2c23a364c8a72bc1",
+        "postinst": "1695da8f93302177a3ee1c715be01c2501f3294075b0a05871099c5ff39093d0"
       },
       "device_install_verified": false
     }
@@ -29,8 +29,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "c57f0c1e1a0e4164510ca1809c90c4cf7d4a2df3",
-  "app_ipa_sha256": "4f23bfe420fd8a1d1a6e749d8f31e5033e0f957adf800e059226c090f6a5a8c2",
+  "app_build_source_commit": "b3a69e59bd57fa458159f3063a45e7e417045e4f",
+  "app_ipa_sha256": "0c7a8b56dac41cbae2036612c22f3dfbf9542c62dda74a30506993e54543976f",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -42,18 +42,18 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "Build90 Sileo/TrollStore app replacement and folder scanning confirmed from owner logs; provider archive read fails with EPERM",
-  "current_build": 98,
-  "current_installer_version": "0.98-1",
+  "current_build": 99,
+  "current_installer_version": "0.99-1",
   "current_phone_install_test_pending": true,
-  "installer_template_tests": "23 existing installer fixture methods passed on Ra1nbox Linux; final98 Debian archive contents and size/SHA pins verified.",
+  "installer_template_tests": "23 isolated Linux fixture tests passed; actual 99 Debian archives and pins verified separately.",
   "observed_archive_read_failure": {
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
     "build91_provider_retest_pending": false
   },
-  "current_phone_install_test_scope": "Build98 phone update/gameplay, first-use fade shaders, paired multiplayer and sustained thermal results pending.",
+  "current_phone_install_test_scope": "Build 99 phone update, thermal/cache behavior, paired multiplayer and sustained performance testing pending.",
   "previous_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
-  "local_test_environment": "Ra1nbox Linux with isolated mocked commands;23 methods passed. Mac catalog/index tests pass. Actual phone installation not performed.",
-  "upgrade_version_comparison": "0.98-1 >0.97-1 PASS"
+  "local_test_environment": "Existing Ra1nbox Linux tools with isolated mocked commands;23 fixture methods pass. Mac catalog/index tests pass. Actual phone installation not performed.",
+  "upgrade_version_comparison": "0.99-1 >0.98-1 PASS"
 }
