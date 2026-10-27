@@ -15,7 +15,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 99 candidate \u00b7 Installer 0.99-1**\n\nProtect hot startup before loading in Story, Free Roam and LAN. Trim completed idle GPU caches under memory pressure and add opt-in local renderer/asset-read report details. Saved settings and game data are retained. Local tests and package checks pass; phone gameplay and sustained heat/FPS testing remain pending."
+          "markdown": "**Build 100 candidate \u00b7 Installer 0.100-1**\n\nA separate low-memory profile limits native devices below 3400 MiB RAM to Battery detail, up to 432p and 30 FPS, with a smaller texture-streaming budget and earlier safe idle-cache cleanup. iPhone 15 Pro and other devices above that boundary retain Build99 graphics requests and memory policy. Saved settings, game data and multiplayer protocol are retained. Local checks pass; physical Build100 phone/SE gameplay and missing-world verification remain pending."
         },
         {
           "class": "DepictionMarkdownView",
@@ -28,6 +28,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.100-1 / App Build 100\n- Isolate low-memory native protection below 3400 MiB RAM.\n- Preserve modern-device settings and memory policy.\n- Add buffer occupancy and texture-failure diagnostics.\n- Retain previous packages, game files, saves and installer behavior.\n- Physical Build100 phone/SE gameplay testing remains pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
