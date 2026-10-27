@@ -10,12 +10,17 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "## ZGTA V — AppSync installer\n\n**2.0 beta · by zema · experimental**\n\nFor compatible **ARM64 rootful jailbreaks on iOS 15.0–18.2**. Not for RootHide or rootless. Own prepared game files required.\n\nAdd `https://cydia.akemi.ai/` in Sileo for **AppSync Unified 116.0+** and **appinst 2.1.1+**. Install with a compatible jailbreak active. Dependency availability and ZGTA V installation/gameplay through AppSync remain unverified.\n\nUse the separate TrollStore installer if you already use compatible TrollStore. Removing this installer leaves the app/data installed.\n\n[Installation and compatibility](https://github.com/zemabinks/repo/blob/main/docs/zgta-v-installation.md) · [Other sideloaders](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md)"
+          "markdown": "## ZGTA V \u2014 AppSync installer\n\n**2.0 beta \u00b7 by zema \u00b7 experimental**\n\nFor compatible **ARM64 rootful jailbreaks on iOS 15.0\u201318.2**. Not for RootHide or rootless. Own prepared game files required.\n\nAdd `https://cydia.akemi.ai/` in Sileo for **AppSync Unified 116.0+** and **appinst 2.1.1+**. Install with a compatible jailbreak active. Dependency availability and ZGTA V installation/gameplay through AppSync remain unverified.\n\nUse the separate TrollStore installer if you already use compatible TrollStore. Removing this installer leaves the app/data installed.\n\n[Installation and compatibility](https://github.com/zemabinks/repo/blob/main/docs/zgta-v-installation.md) \u00b7 [Other sideloaders](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md)"
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "[Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md) — downloads, setup, host and join steps."
+          "markdown": "**Build 96 candidate \u00b7 Installer 0.96-1**\n\nRevised bounded multiplayer host-broadcast sizing. Local build/package and Chrome single-client entry/reconnect checks pass. Paired iPhone/browser and small-job tests remain pending. Existing archive access, icons, game files and saves are preserved."
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "[Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md) \u2014 downloads, setup, host and join steps."
         }
       ]
     },
@@ -23,6 +28,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.96-1 / App Build 96\n- Apply the revised bounded host-broadcast capacity fix.\n- Pin the exact Build96 IPA by size and SHA-256.\n- Keep existing installer/helper behavior and previous package versions.\n- Physical phone and paired gameplay retest pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
