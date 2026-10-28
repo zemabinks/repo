@@ -386,3 +386,44 @@ SHA1: f2efc452be12ce8211cdc0d0e547f826e5dd9be0
 SHA256: 7f3724af956348c352f3e24136feab33b298ab4a659655f36fc0cde1e3660f5f
 SHA512: 9693ca1e00d2540e66164d933ace3e5d279ca81d1c39ff9a45dc3505a903b745e862c7a0819f5aafebc6106caf3721c1363dbf724af0f13ba44184e50af91aab
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.103-1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V Build 103 exact-fade candidate; physical visual acceptance pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.103-1_all.deb
+Size: 2968
+MD5sum: beedd004294a452f3b9f0f4092734fc8
+SHA1: 947245a46f00d01a166c75c01d0c3dc01f4c59ea
+SHA256: 7bf4ada6f64cb04c8bf3fb2641b248fb391bbc9fdc362a1ca03aa0da23d795d9
+SHA512: 570e4b6d8a0fe5dd6e46cad9549124e5297debcb0fbc584b85e4b70d799e250a8b625fc53beda9c911e81534e40e8acd2977fe9772499803e6d15b03f3644fc5
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.103-1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA V Build 103 exact-fade candidate; physical visual acceptance pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.103-1_iphoneos-arm.deb
+Size: 2820
+MD5sum: 3440c22e3b36db6f3628ab2d0d21d0ff
+SHA1: 4d06df130c49b87754327ebbc1036c4a47c475b4
+SHA256: bea6b774d9fd8aeb36ac17f45e0bdbb5b1b299621879aef4825e4843bf760925
+SHA512: d6afbc2f2a413d6d876940e085b0610028f7370a93665f28111c7cde976e94f8d601b3919449e95c32acf1e73f2bd2fd90d8f95297a487718eb351c0a3da986f
+
