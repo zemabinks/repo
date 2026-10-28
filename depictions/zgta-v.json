@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 104 candidate \u00b7 Installer 0.104-1**\n\nBuild 104 corrects stale fade state after original game resets. All 12 authenticated engine-state sequences pass; retained Build 103 fails seven expected cases. Shader code, memory settings, cooling, saves and networking are unchanged. Owner testing rejected Build 103 for the flickering-building scene. Exact Build 104 iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed."
+          "markdown": "**Build 105 candidate \u00b7 Installer 0.105-1**\n\nBuild 105 corrects native CPU constant-buffer shadow copies and adds an explicit bounded rendering capture. Build 104 still flickers in owner testing; scene causality is not established. Capture rendering issue is available in Performance check; save that report after rotating the camera. Normal play/FPS tests keep capture off. Memory profiles, cache budgets, saves, networking and browser rendering bytes are unchanged. Exact phone scene verification remains pending; no FPS gain or complete scene fix is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.105-1 / App Build 105\nBuild 105 corrects native CPU constant-buffer shadow copies and adds an explicit bounded rendering capture. Build 104 still flickers in owner testing; scene causality is not established. Capture rendering issue is available in Performance check; save that report after rotating the camera. Normal play/FPS tests keep capture off. Memory profiles, cache budgets, saves, networking and browser rendering bytes are unchanged. Exact phone scene verification remains pending; no FPS gain or complete scene fix is claimed."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
