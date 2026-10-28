@@ -15,7 +15,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 102 candidate \u00b7 Installer 0.102-1**\n\nBuild102 is a system-audit candidate: safer save restore and individual recovery, dirty multiplayer profile checkpoints, lower nested-archive parsing copies, directory descriptor leak and Metal allocation failure handling. Browser LAN local mod snapshots and exact running-host identity are included in matching browser packages. Local checks pass; physical iPhone/Mac gameplay, sustained heat and paired mod visibility remain pending. No FPS gain or SE missing-world fix is claimed."
+          "markdown": "**Build 103 candidate \u00b7 Installer 0.103-1**\n\nBuild103 corrects the missing-technique fade fallback on Metal and WebGPU: it preserves inversion and the original complementary 2x2 pixel masks. Automated source, shader and package checks pass. Exact Build103 iPhone/Mac visual gameplay acceptance remains pending; no measured FPS gain or complete missing-building fix is claimed. Memory settings, thermal protection, saves and multiplayer protocol are unchanged."
         },
         {
           "class": "DepictionMarkdownView",
@@ -28,6 +28,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.103-1 / App Build 103\nBuild103 corrects the missing-technique fade fallback on Metal and WebGPU: it preserves inversion and the original complementary 2x2 pixel masks. Automated source, shader and package checks pass. Exact Build103 iPhone/Mac visual gameplay acceptance remains pending; no measured FPS gain or complete missing-building fix is claimed. Memory settings, thermal protection, saves and multiplayer protocol are unchanged."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
