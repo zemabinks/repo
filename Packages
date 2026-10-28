@@ -468,3 +468,44 @@ SHA1: bd4abab96878fb48bfb4dc60e1e376f7e90e2733
 SHA256: 3dbc2eec284b489757a868c4fd9edc61d1d25807e81e28bf2e70e1d0d9c5ea06
 SHA512: d2e3bcee5ed2b1a9fcec6e7116a5c329cf1b56bd5c8122f33a63e02c7e7c8bddb6b9c7a2b596826acc52cf76f96cf504c41253bd81263c311e5633c88a00cb39
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.105-1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V Build 105 renderer capture candidate; scene verification pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.105-1_all.deb
+Size: 2956
+MD5sum: 1d1917ba50a439e3804526555984c916
+SHA1: 404a1e85eb38dc8bb6cba77a4265b5266bbd7216
+SHA256: 8bd74651d7c31a14febf3b90d9a10c4cd3746b28826ef98e31b04ad066d729e2
+SHA512: 30bfd12613870e7a8a8437ffad96c827f47e90aa29aee2f02c8ae19173299dfc59c2b89bb88eb1ec496f006406d67188277080583691888648099292e0ef5914
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.105-1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA V Build 105 renderer capture candidate; scene verification pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.105-1_iphoneos-arm.deb
+Size: 2812
+MD5sum: 40b2826eabe7d30c2f561c21206acb84
+SHA1: cf6564e569e8bc38d1637bd2d9cdbe1af1ee74e4
+SHA256: a04182436ddbad14db76be6d272d0ee3526ad5a35c252c459f20f12261895735
+SHA512: c1b6457f7b74e34e99e74b875290865447c208ae98448d9808ac0b19977c71ed1af9e96ffee1bded1ac606dae9538c61bd81bee6149d70b19ccf05d5d41a5574
+
