@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 100 candidate \u00b7 Installer 0.100-1**\n\nA separate low-memory profile limits native devices below 3400 MiB RAM to Battery detail, up to 432p and 30 FPS, with a smaller texture-streaming budget and earlier safe idle-cache cleanup. iPhone 15 Pro and other devices above that boundary retain Build99 graphics requests and memory policy. Saved settings, game data and multiplayer protocol are retained. Local checks pass; physical Build100 phone/SE gameplay and missing-world verification remain pending."
+          "markdown": "**Build 101 candidate \u00b7 Installer 0.101-1**\n\nMemory management is now independent of presets, resolution and FPS. Automatic keeps the standard policy on iPhone 15 Pro and selects reduced budgets below 3400 MiB RAM. Packed texture decoding, event-driven asset workers, pressure-safe buffer cleanup and diagnostics are improved. Existing app data, mods and multiplayer protocol are retained. Local checks pass; exact Build 101 phone/SE gameplay, sustained heat and paired multiplayer tests remain pending. No whole-game FPS gain or missing-road fix is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.101-1 / App Build 101\n- Separate memory management from presets and display controls.\n- Improve packed texture decoding, asset wakeups and completed-buffer cleanup.\n- Correct pipeline wait and depth-proxy diagnostics.\n- Group iOS settings into presets, display and memory.\n- Retain previous packages, game files, saves and installer templates.\n- Physical Build 101 gameplay and heat testing remain pending."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
