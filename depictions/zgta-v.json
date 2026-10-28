@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 103 candidate \u00b7 Installer 0.103-1**\n\nBuild103 corrects the missing-technique fade fallback on Metal and WebGPU: it preserves inversion and the original complementary 2x2 pixel masks. Automated source, shader and package checks pass. Exact Build103 iPhone/Mac visual gameplay acceptance remains pending; no measured FPS gain or complete missing-building fix is claimed. Memory settings, thermal protection, saves and multiplayer protocol are unchanged."
+          "markdown": "**Build 104 candidate \u00b7 Installer 0.104-1**\n\nBuild 104 corrects stale fade state after original game resets. All 12 authenticated engine-state sequences pass; retained Build 103 fails seven expected cases. Shader code, memory settings, cooling, saves and networking are unchanged. Owner testing rejected Build 103 for the flickering-building scene. Exact Build 104 iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.104-1 / App Build 104\nBuild 104 corrects stale fade state after original game resets. All 12 authenticated engine-state sequences pass; retained Build 103 fails seven expected cases. Shader code, memory settings, cooling, saves and networking are unchanged. Owner testing rejected Build 103 for the flickering-building scene. Exact Build 104 iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,

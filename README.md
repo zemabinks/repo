@@ -10,21 +10,21 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — 2.0 beta · Build 103 candidate
+### ZGTA V — 2.0 beta · Build 104 candidate
 
 By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
 **Requires iOS / iPadOS 15.0 or later** and your own matching prepared game files. TrollStore / TrollStore Lite must support your exact device and iOS version.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-103/ZGTA-V-Build103-Exact-Fade-Masks-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-104/ZGTA-V-Build104-Fade-State-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
 
-In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.103-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
+In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.104-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
 
 [Sideloadly and AltStore Classic](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) can be tried with the same IPA; ZGTA V has not been tested through them. The separate AppSync package is an untested option for compatible ARM64 rootful jailbreaks on iOS 15.0–18.2, not RootHide/rootless. See [Sileo installation](docs/zgta-v-installation.md).
 
-[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-103)
+[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-104)
 
-Build103 corrects the missing-technique fade fallback on Metal and WebGPU: it preserves inversion and the original complementary 2x2 pixel masks. Automated source, shader and package checks pass. Exact Build103 iPhone/Mac visual gameplay acceptance remains pending; no measured FPS gain or complete missing-building fix is claimed. Memory settings, thermal protection, saves and multiplayer protocol are unchanged.
+Build 104 corrects stale fade state after original game resets. All 12 authenticated engine-state sequences pass; retained Build 103 fails seven expected cases. Shader code, memory settings, cooling, saves and networking are unchanged. Owner testing rejected Build 103 for the flickering-building scene. Exact Build 104 iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed.
 
 ## GitHub Releases
 

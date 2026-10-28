@@ -4,22 +4,22 @@
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.103-1_all.deb",
-      "bytes": 2968,
-      "sha256": "7bf4ada6f64cb04c8bf3fb2641b248fb391bbc9fdc362a1ca03aa0da23d795d9",
+      "file": "com.zema.zgta-v.trollstore_0.104-1_all.deb",
+      "bytes": 2956,
+      "sha256": "398c3e186ff9134f848c6b5a61f4ccfe082aebe9445e39cc9ca48054bab469b4",
       "source_inputs_sha256": {
-        "control": "b50d64305c83991c6b9d46db32907289f2955f8d93fefe287266bd833f32c4cd",
-        "postinst": "5a22e318c29dd354f536104ad38ad485a52b8c966e1738f22b0ae1bc4356cf0f"
+        "control": "b6fe43f70d2399dc86f90be0c46ffc47b725c29539e2fa261dfc6731c0fa4764",
+        "postinst": "4d7f513a3ced2e6f4afd8b2a1b66365b7c02c066326cefedab5ca0958eb7f455"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.103-1_iphoneos-arm.deb",
-      "bytes": 2820,
-      "sha256": "bea6b774d9fd8aeb36ac17f45e0bdbb5b1b299621879aef4825e4843bf760925",
+      "file": "com.zema.zgta-v.appsync_0.104-1_iphoneos-arm.deb",
+      "bytes": 2812,
+      "sha256": "3dbc2eec284b489757a868c4fd9edc61d1d25807e81e28bf2e70e1d0d9c5ea06",
       "source_inputs_sha256": {
-        "control": "355daf7c20e20401b56e7e7356e1673ff4e17ff9c94bddd5f0dc0168da0909a7",
-        "postinst": "ea407050134a6164ab7b01454afe7dbdb7ce718500cb66b6757baf6cdc5478ff"
+        "control": "6bb8771c97334a39db3c0063c7eec5b9da8443ae66c7bf5686bd9961f81ad063",
+        "postinst": "db2073c0e7ea934e040d333acecf7d56a54560f4f61470c084d0c256cd4c588b"
       },
       "device_install_verified": false
     }
@@ -29,8 +29,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "fd6f233ada22fea6b483d93a6ded2444848cdac4",
-  "app_ipa_sha256": "ca666585193f90f4d1342e00cb9b97b50fb395b0d566011db5fa137ff999e146",
+  "app_build_source_commit": "f4b506be08ab1db2d0f254a6d8d4ed585297e721",
+  "app_ipa_sha256": "d43e642cfb708a9966308d36d2def608dc26654793db353bb18aadd752f0c0b1",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -42,18 +42,18 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "Build90 Sileo/TrollStore app replacement and folder scanning confirmed from owner logs; provider archive read fails with EPERM",
-  "current_build": 103,
-  "current_installer_version": "0.103-1",
+  "current_build": 104,
+  "current_installer_version": "0.104-1",
   "current_phone_install_test_pending": true,
-  "installer_template_tests": "Unchanged templates; exact Build 103 Linux mocked fixtures and Debian byte/SHA pins checked separately.",
+  "installer_template_tests": "Unchanged templates; exact Build 104 Linux mocked fixtures and Debian byte/SHA pins checked separately.",
   "observed_archive_read_failure": {
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
     "build91_provider_retest_pending": false
   },
-  "current_phone_install_test_scope": "Build103 phone/Mac visual fade verification and affected gameplay pending.",
+  "current_phone_install_test_scope": "Build 104 phone/Mac visual fade verification and affected gameplay pending.",
   "previous_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
   "local_test_environment": "Existing Ra1nbox Linux tools with isolated mocked commands;23 fixture methods pass. Mac catalog/index tests pass. Actual phone installation not performed.",
-  "upgrade_version_comparison": "0.103-1 > 0.102-1 PASS"
+  "upgrade_version_comparison": "0.104-1 > 0.103-1 PASS"
 }
