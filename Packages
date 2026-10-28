@@ -509,3 +509,44 @@ SHA1: cf6564e569e8bc38d1637bd2d9cdbe1af1ee74e4
 SHA256: a04182436ddbad14db76be6d272d0ee3526ad5a35c252c459f20f12261895735
 SHA512: c1b6457f7b74e34e99e74b875290865447c208ae98448d9808ac0b19977c71ed1af9e96ffee1bded1ac606dae9538c61bd81bee6149d70b19ccf05d5d41a5574
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.106-1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V Build 106 draw fade cleanup candidate; scene verification pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.106-1_all.deb
+Size: 2972
+MD5sum: b84ede81ddd91c8255ad7d694c9b7c5a
+SHA1: 99c785dc542bdbb9c56f656ae67e881bc905ce25
+SHA256: ff33fd6be66447b689b710713b70bdde3fb6edade1265f6db57e9d43de11bd3f
+SHA512: 1d6f0fb501a77a4308bbff2a7c4fb7b4cbd49d09026e7357a834a3b4e7d8595e7d74b37ae7ceed0db4dccdfaf8f08e37d7dcd40790d58886a779175f3bd68572
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.106-1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA V Build 106 draw fade cleanup candidate; scene verification pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.106-1_iphoneos-arm.deb
+Size: 2824
+MD5sum: 45cd77e03adb3a7de71e3cb296bb3a94
+SHA1: 6e4f069accc92753857fb48d470a7b5dc463cf5c
+SHA256: 2f544742a5e5c6706a8b6fd9dc65009ca476bef64d32a14a3fd0d3a00f7c1df4
+SHA512: 1bdc1c9aece8285a395338a4a8b9dd5703c85569883cce63a4329bdbea49f0a9bc88792866f1ef0bfee32f6b3099fc67a624590c67c4a2b79b25aa4afb8b69e3
+
