@@ -15,7 +15,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 101 candidate \u00b7 Installer 0.101-1**\n\nMemory management is now independent of presets, resolution and FPS. Automatic keeps the standard policy on iPhone 15 Pro and selects reduced budgets below 3400 MiB RAM. Packed texture decoding, event-driven asset workers, pressure-safe buffer cleanup and diagnostics are improved. Existing app data, mods and multiplayer protocol are retained. Local checks pass; exact Build 101 phone/SE gameplay, sustained heat and paired multiplayer tests remain pending. No whole-game FPS gain or missing-road fix is claimed."
+          "markdown": "**Build 102 candidate \u00b7 Installer 0.102-1**\n\nBuild102 is a system-audit candidate: safer save restore and individual recovery, dirty multiplayer profile checkpoints, lower nested-archive parsing copies, directory descriptor leak and Metal allocation failure handling. Browser LAN local mod snapshots and exact running-host identity are included in matching browser packages. Local checks pass; physical iPhone/Mac gameplay, sustained heat and paired mod visibility remain pending. No FPS gain or SE missing-world fix is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -28,6 +28,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.102-1 / App Build 102\nBuild102 is a system-audit candidate: safer save restore and individual recovery, dirty multiplayer profile checkpoints, lower nested-archive parsing copies, directory descriptor leak and Metal allocation failure handling. Browser LAN local mod snapshots and exact running-host identity are included in matching browser packages. Local checks pass; physical iPhone/Mac gameplay, sustained heat and paired mod visibility remain pending. No FPS gain or SE missing-world fix is claimed."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
