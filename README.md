@@ -10,21 +10,21 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — 2.0 beta · Build 101 candidate
+### ZGTA V — 2.0 beta · Build 102 candidate
 
 By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
 **Requires iOS / iPadOS 15.0 or later** and your own matching prepared game files. TrollStore / TrollStore Lite must support your exact device and iOS version.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-101/ZGTA-V-Build101-Performance-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-102/ZGTA-V-Build102-System-Audit-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
 
-In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.101-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
+In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.102-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
 
 [Sideloadly and AltStore Classic](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) can be tried with the same IPA; ZGTA V has not been tested through them. The separate AppSync package is an untested option for compatible ARM64 rootful jailbreaks on iOS 15.0–18.2, not RootHide/rootless. See [Sileo installation](docs/zgta-v-installation.md).
 
-[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-101)
+[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-102)
 
-Build 101 is a performance and settings candidate. Memory management is now independent of presets, resolution and FPS. Automatic keeps the standard policy on iPhone 15 Pro and selects reduced budgets below 3400 MiB RAM. Packed texture decoding, event-driven asset workers, pressure-safe buffer cleanup and diagnostics are improved. Existing app data, mods and multiplayer protocol are retained. Local checks pass; exact Build 101 phone/SE gameplay, sustained heat and paired multiplayer tests remain pending. No whole-game FPS gain or missing-road fix is claimed.
+Build102 is a system-audit candidate: safer save restore and individual recovery, dirty multiplayer profile checkpoints, lower nested-archive parsing copies, directory descriptor leak and Metal allocation failure handling. Browser LAN local mod snapshots and exact running-host identity are included in matching browser packages. Local checks pass; physical iPhone/Mac gameplay, sustained heat and paired mod visibility remain pending. No FPS gain or SE missing-world fix is claimed.
 
 ## GitHub Releases
 
