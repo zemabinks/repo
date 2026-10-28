@@ -4,22 +4,22 @@
   "tests_are_mocked": true,
   "packages": [
     {
-      "file": "com.zema.zgta-v.trollstore_0.105-1_all.deb",
-      "bytes": 2956,
-      "sha256": "8bd74651d7c31a14febf3b90d9a10c4cd3746b28826ef98e31b04ad066d729e2",
+      "file": "com.zema.zgta-v.trollstore_0.106-1_all.deb",
+      "bytes": 2972,
+      "sha256": "ff33fd6be66447b689b710713b70bdde3fb6edade1265f6db57e9d43de11bd3f",
       "source_inputs_sha256": {
-        "control": "c82f9fc2b2120c5f2c0f6df9cfd496c311a0c8c1c43cc0f73f8be5431c4a83ad",
-        "postinst": "c335ec10656c4ac9717a3bcf6f9bc2930676a09f66a6a1847578b2dbba6e753d"
+        "control": "29c954fa66d7c28f31c7098daced09e0a082440c742743e0216629b3aef95d1b",
+        "postinst": "fa8764d4e3e48f1c15d42f835dc72929d5e4293445ecbc4305db3f330a1268d5"
       },
       "device_install_verified": false
     },
     {
-      "file": "com.zema.zgta-v.appsync_0.105-1_iphoneos-arm.deb",
-      "bytes": 2812,
-      "sha256": "a04182436ddbad14db76be6d272d0ee3526ad5a35c252c459f20f12261895735",
+      "file": "com.zema.zgta-v.appsync_0.106-1_iphoneos-arm.deb",
+      "bytes": 2824,
+      "sha256": "2f544742a5e5c6706a8b6fd9dc65009ca476bef64d32a14a3fd0d3a00f7c1df4",
       "source_inputs_sha256": {
-        "control": "d31b1c03bb885c8be2b114d03bca20004741d14490821b5ceba6eb4ef76dfb28",
-        "postinst": "23ea5ef3dd51902fca3859c57f64f4f228ecf06f452799d1510ccb84f1d6d4be"
+        "control": "3948c1aca26a25f74d9b1179366ac892851e934b79836e9e8d04461069464d1f",
+        "postinst": "699f72111cea79177d3aa0d71a1511c553721e99e6ebcc1c8ee5fd796cd1e713"
       },
       "device_install_verified": false
     }
@@ -29,8 +29,8 @@
   "phone_install_test_pending": true,
   "AppSync_dependency_server": "https://cydia.akemi.ai timed out from the Mac; availability unverified",
   "appsync_upstream_commit": "235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a",
-  "app_build_source_commit": "615bc1d2c7f66d3868c947dda44d3953a1f9a946",
-  "app_ipa_sha256": "6e10676d167e45236196df7ae4770b11f8c08dfc02baf37088ac8aaeb2cc018b",
+  "app_build_source_commit": "3b409782f81a72152b68ce61bceacf54e113824a",
+  "app_ipa_sha256": "ae3e69bd5a8e3f60e9830867cfddefd5b21da4909c2694f231f82efce4fb70a1",
   "observed_device_failure": {
     "version": "0.88-1",
     "stage": "helper discovery before download",
@@ -42,18 +42,18 @@
   "roothide_developer_commit": "c53cc199f1bab7d7ea2fd70f0a14e215b1f3461b",
   "physical_verification": "downloads/zgta-v-device-install.json",
   "previous_device_confirmation": "Build90 Sileo/TrollStore app replacement and folder scanning confirmed from owner logs; provider archive read fails with EPERM",
-  "current_build": 105,
-  "current_installer_version": "0.105-1",
+  "current_build": 106,
+  "current_installer_version": "0.106-1",
   "current_phone_install_test_pending": true,
-  "installer_template_tests": "Unchanged templates; exact Build 105 Linux mocked fixtures and Debian byte/SHA pins checked separately.",
+  "installer_template_tests": "Unchanged templates; exact Build 106 Linux mocked installer/catalog/index fixtures all23 pass; Debian controls/postinst byte/SHA pins verified.",
   "observed_archive_read_failure": {
     "build": 90,
     "errno": "EPERM / Operation not permitted",
     "stage": "source read before extraction",
     "build91_provider_retest_pending": false
   },
-  "current_phone_install_test_scope": "Build 105 rendering capture and scene causality pending; 104 failed the owner scene.",
+  "current_phone_install_test_scope": "Build 106 draw-lifetime correction; exact iPhone/Mac visual acceptance pending",
   "previous_owner_archive_confirmation": "downloads/zgta-v-build91-owner-confirmation.json",
-  "local_test_environment": "Existing Ra1nbox Linux tools with isolated mocked commands;23 fixture methods pass. Mac catalog/index tests pass. Actual phone installation not performed.",
-  "upgrade_version_comparison": "0.105-1 > 0.104-1 PASS"
+  "local_test_environment": "Existing Ra1nbox Linux tools with isolated mocked commands;23 methods pass. Mac catalog/index checks run separately. No actual phone installation performed.",
+  "upgrade_version_comparison": "0.106-1 > 0.105-1 PASS"
 }

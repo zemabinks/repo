@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 105 candidate \u00b7 Installer 0.105-1**\n\nBuild 105 corrects native CPU constant-buffer shadow copies and adds an explicit bounded rendering capture. Build 104 still flickers in owner testing; scene causality is not established. Capture rendering issue is available in Performance check; save that report after rotating the camera. Normal play/FPS tests keep capture off. Memory profiles, cache budgets, saves, networking and browser rendering bytes are unchanged. Exact phone scene verification remains pending; no FPS gain or complete scene fix is claimed."
+          "markdown": "**Build 106 candidate \u00b7 Installer 0.106-1**\n\nBuild 106 corrects a fade-mask cleanup leak in native and browser rendering. Nine engine paths inline EndDraw and previously bypassed the fallback-mask reset; the next ordinary draw could inherit partial coverage. Native and actual original WASM regression fixtures reproduce the old leak and pass with the correction. The Build 105 capture had no sampled shadow/upload mismatches, cache evictions or memory clamps; it does not establish a cache shortage. Memory profiles, cache limits, saves and multiplayer protocol are unchanged. Exact iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.106-1 / App Build 106\nBuild 106 corrects a fade-mask cleanup leak in native and browser rendering. Nine engine paths inline EndDraw and previously bypassed the fallback-mask reset; the next ordinary draw could inherit partial coverage. Native and actual original WASM regression fixtures reproduce the old leak and pass with the correction. The Build 105 capture had no sampled shadow/upload mismatches, cache evictions or memory clamps; it does not establish a cache shortage. Memory profiles, cache limits, saves and multiplayer protocol are unchanged. Exact iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
