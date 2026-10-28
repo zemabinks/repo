@@ -8,12 +8,12 @@
 
 1. Make sure compatible TrollStore / TrollStore Lite is already installed. The app's iOS minimum does not mean TrollStore supports every later iOS version.
 2. In Sileo → Sources, add `https://zemabinks.github.io/repo/` and refresh.
-3. Install **ZGTA V (TrollStore installer)**, version **0.103-1**.
+3. Install **ZGTA V (TrollStore installer)**, version **0.104-1**.
 4. Open **ZGTA V → Game files** and choose your prepared folder or archive. Follow the [game-file instructions](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md#required-game-folder).
 
 To update, install over the existing app. Do not delete the app or its data first. Removing the small Sileo package leaves ZGTA V installed.
 
-If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-103/ZGTA-V-Build103-Exact-Fade-Masks-TrollStore.ipa) manually through it.
+If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-104/ZGTA-V-Build104-Fade-State-TrollStore.ipa) manually through it.
 
 ## AppSync — experimental
 
@@ -38,6 +38,6 @@ Follow [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/mai
 
 ## Downloads and support
 
-[Build 103](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-103) contains the current Sileo candidate IPA, installers and checksums. Build103 corrects the missing-technique fade fallback on Metal and WebGPU: it preserves inversion and the original complementary 2x2 pixel masks. Automated source, shader and package checks pass. Exact Build103 iPhone/Mac visual gameplay acceptance remains pending; no measured FPS gain or complete missing-building fix is claimed. Memory settings, thermal protection, saves and multiplayer protocol are unchanged. Updating through either installer preserves existing app data.
+[Build 104](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-104) contains the current Sileo candidate IPA, installers and checksums. Build 104 corrects stale fade state after original game resets. All 12 authenticated engine-state sequences pass; retained Build 103 fails seven expected cases. Shader code, memory settings, cooling, saves and networking are unchanged. Owner testing rejected Build 103 for the flickering-building scene. Exact Build 104 iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed. Updating through either installer preserves existing app data.
 
 If installation fails, share the exact Sileo error. For an in-app problem, use **Settings → Saves & support → Share log**. Review personal paths and addresses before posting; do not upload game files or private saves.
