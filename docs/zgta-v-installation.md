@@ -8,12 +8,12 @@
 
 1. Make sure compatible TrollStore / TrollStore Lite is already installed. The app's iOS minimum does not mean TrollStore supports every later iOS version.
 2. In Sileo → Sources, add `https://zemabinks.github.io/repo/` and refresh.
-3. Install **ZGTA V (TrollStore installer)**, version **0.100-1**.
+3. Install **ZGTA V (TrollStore installer)**, version **0.101-1**.
 4. Open **ZGTA V → Game files** and choose your prepared folder or archive. Follow the [game-file instructions](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md#required-game-folder).
 
 To update, install over the existing app. Do not delete the app or its data first. Removing the small Sileo package leaves ZGTA V installed.
 
-If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-100/ZGTA-V-Build100-LowMemory-TrollStore.ipa) manually through it.
+If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-101/ZGTA-V-Build101-Performance-TrollStore.ipa) manually through it.
 
 ## AppSync — experimental
 
@@ -38,6 +38,6 @@ Follow [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/mai
 
 ## Downloads and support
 
-[ZGTA V 2.0 beta](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) provides the last published browser packages and guides. [Build 100](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-100) contains the current Sileo IPA, installers, checksums and verification. Native version **2.0 / Build 100** adds a separate low-memory profile below 3400 MiB RAM and buffer occupancy/texture-failure diagnostics. Modern-device requests match Build 99 in local checks; physical Build 100 gameplay and SE missing-world verification remain pending. Updating through either installer preserves existing app data.
+[ZGTA V 2.0 beta](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) provides the last published browser packages and guides. [Build 101](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-101) contains the current Sileo IPA, installers, checksums and verification. Native version **2.0 / Build 101** improves texture decoding, asset wakeups and safe buffer cleanup. Memory management is separate from presets, resolution and FPS. Automatic retains standard policy on modern phones. Physical Build 101 gameplay, heat and SE missing-world verification remain pending. Updating through either installer preserves existing app data.
 
 If installation fails, share the exact Sileo error. For an in-app problem, use **Settings → Saves & support → Share log**. Review personal paths and addresses before posting; do not upload game files or private saves.
