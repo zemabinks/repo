@@ -10,21 +10,21 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — 2.0 beta · Build 106 candidate
+### ZGTA V — 2.0 beta · Build 107 candidate
 
 By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
 **Requires iOS / iPadOS 15.0 or later** and your own matching prepared game files. TrollStore / TrollStore Lite must support your exact device and iOS version.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-106/ZGTA-V-Build106-Fade-Lifetime-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-107/ZGTA-V-Build107-Memory-UI-Audit-TrollStore.ipa) · [Other platform downloads (last published)](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
 
-In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.106-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
+In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.107-1**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
 
 [Sideloadly and AltStore Classic](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) can be tried with the same IPA; ZGTA V has not been tested through them. The separate AppSync package is an untested option for compatible ARM64 rootful jailbreaks on iOS 15.0–18.2, not RootHide/rootless. See [Sileo installation](docs/zgta-v-installation.md).
 
-[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-106)
+[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107)
 
-Build 106 corrects a fade-mask cleanup leak in native and browser rendering. Nine engine paths inline EndDraw and previously bypassed the fallback-mask reset; the next ordinary draw could inherit partial coverage. Native and actual original WASM regression fixtures reproduce the old leak and pass with the correction. The Build 106 capture had no sampled shadow/upload mismatches, cache evictions or memory clamps; it does not establish a cache shortage. Memory profiles, cache limits, saves and multiplayer protocol are unchanged. Exact iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed.
+Build 107 audits low-memory behavior while preserving the working Build106 rendering fix. Reduced memory bounds optional prefetch to four jobs/one speculative job and trims only completed idle GPU storage earlier; Standard and higher-memory settings are unchanged. Memory management stays independent of graphics presets, resolution and FPS. iOS Find Lobby icons and preset descriptions are corrected; simulator layouts were inspected on SE2020 and iPhone15Pro sizes. Performance reports distinguish the applied memory mode from a pending saved choice. Focused source, native, signature, icon and portable checks pass. The owner confirmed the Build106 parking/highway scene stable; exact Build107 iPhone/Mac performance and graphical tests remain pending. No measured FPS, heat or physical SE2020 improvement is claimed.
 
 ## GitHub Releases
 

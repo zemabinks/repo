@@ -8,12 +8,12 @@
 
 1. Make sure compatible TrollStore / TrollStore Lite is already installed. The app's iOS minimum does not mean TrollStore supports every later iOS version.
 2. In Sileo → Sources, add `https://zemabinks.github.io/repo/` and refresh.
-3. Install **ZGTA V (TrollStore installer)**, version **0.106-1**.
+3. Install **ZGTA V (TrollStore installer)**, version **0.107-1**.
 4. Open **ZGTA V → Game files** and choose your prepared folder or archive. Follow the [game-file instructions](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md#required-game-folder).
 
 To update, install over the existing app. Do not delete the app or its data first. Removing the small Sileo package leaves ZGTA V installed.
 
-If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-106/ZGTA-V-Build106-Fade-Lifetime-TrollStore.ipa) manually through it.
+If Sileo shows Reinstall, cannot find the package or reports **Install Identifier Mismatch**, clear the queued attempt, refresh Sources and reopen the package. If the helper cannot be found, check TrollStore or install the [same IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-107/ZGTA-V-Build107-Memory-UI-Audit-TrollStore.ipa) manually through it.
 
 ## AppSync — experimental
 
@@ -38,6 +38,6 @@ Follow [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/mai
 
 ## Downloads and support
 
-[Build 106](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-106) contains the current Sileo candidate IPA, installers and checksums. Build 106 corrects a fade-mask cleanup leak in native and browser rendering. Nine engine paths inline EndDraw and previously bypassed the fallback-mask reset; the next ordinary draw could inherit partial coverage. Native and actual original WASM regression fixtures reproduce the old leak and pass with the correction. The Build 106 capture had no sampled shadow/upload mismatches, cache evictions or memory clamps; it does not establish a cache shortage. Memory profiles, cache limits, saves and multiplayer protocol are unchanged. Exact iPhone/Mac visual acceptance remains pending; no complete scene fix or FPS gain is claimed. Updating through either installer preserves existing app data.
+[Build 107](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107) contains the current Sileo candidate IPA, installers and checksums. Build 107 audits low-memory behavior while preserving the working Build106 rendering fix. Reduced memory bounds optional prefetch to four jobs/one speculative job and trims only completed idle GPU storage earlier; Standard and higher-memory settings are unchanged. Memory management stays independent of graphics presets, resolution and FPS. iOS Find Lobby icons and preset descriptions are corrected; simulator layouts were inspected on SE2020 and iPhone15Pro sizes. Performance reports distinguish the applied memory mode from a pending saved choice. Focused source, native, signature, icon and portable checks pass. The owner confirmed the Build106 parking/highway scene stable; exact Build107 iPhone/Mac performance and graphical tests remain pending. No measured FPS, heat or physical SE2020 improvement is claimed. Updating through either installer preserves existing app data.
 
 If installation fails, share the exact Sileo error. For an in-app problem, use **Settings → Saves & support → Share log**. Review personal paths and addresses before posting; do not upload game files or private saves.
