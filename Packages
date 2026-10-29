@@ -550,3 +550,44 @@ SHA1: 6e4f069accc92753857fb48d470a7b5dc463cf5c
 SHA256: 2f544742a5e5c6706a8b6fd9dc65009ca476bef64d32a14a3fd0d3a00f7c1df4
 SHA512: 1bdc1c9aece8285a395338a4a8b9dd5703c85569883cce63a4329bdbea49f0a9bc88792866f1ef0bfee32f6b3099fc67a624590c67c4a2b79b25aa4afb8b69e3
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.107-1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V Build 107 memory and UI audit candidate; owner tests pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.107-1_all.deb
+Size: 2968
+MD5sum: c01b21995ca568b3c7fae18dc0ee82c9
+SHA1: d28eacb00ed088d2620d52b777edc0a1726c7d52
+SHA256: d0fd56b62e353173c6f75e5b214cc12de2e0ad0300b80e6b054d0784b5b1ea75
+SHA512: 29ae0b95963a76d8565c915f3440e8d28b2c7d5f8dba6788f739fb7381e7b63742b323a791cd3870ab7684e4cb68a3c5ced91f9efed80a3ac6d974a6b4eaa81f
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.107-1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA V Build 107 memory and UI audit candidate; owner tests pending
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.107-1_iphoneos-arm.deb
+Size: 2820
+MD5sum: 6d4e95bdb7b47409c3593894e21c17e4
+SHA1: 56ea6523057fec07b2a254efecb7142a0806d2fc
+SHA256: 048dd3c59448301cd7db8f288dad0f8b186406a5c386256560543bea04f6d799
+SHA512: 47c9036acbd2eca6719881995b343cea69fd5a258aa3775ac2082b67f0f3c587515eb9f447e42baef25bb360ddd42b60e6a8c3bea004be1689a4d20cd4769c92
+
