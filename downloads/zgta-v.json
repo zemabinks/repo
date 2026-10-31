@@ -3,7 +3,7 @@
   "name": "ZGTA V",
   "author": "zema",
   "build": 107,
-  "status": "beta candidate",
+  "status": "2.0 beta 3 \u2014 owner-approved release",
   "installation": "TrollStore",
   "bundle_identifier": "com.zemabinks.gtamp.enginelanlab",
   "file": "ZGTA-V-Build107-Memory-UI-Audit-TrollStore.ipa",
@@ -12,10 +12,10 @@
   "download_url": "https://github.com/zemabinks/repo/releases/download/zgta-v-build-107/ZGTA-V-Build107-Memory-UI-Audit-TrollStore.ipa",
   "release_url": "https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107",
   "own_game_files_required": true,
-  "device_acceptance": "Build 107 audits low-memory behavior while preserving the working Build106 rendering fix. Reduced memory bounds optional prefetch to four jobs/one speculative job and trims only completed idle GPU storage earlier; Standard and higher-memory settings are unchanged. Memory management stays independent of graphics presets, resolution and FPS. iOS Find Lobby icons and preset descriptions are corrected; simulator layouts were inspected on SE2020 and iPhone15Pro sizes. Performance reports distinguish the applied memory mode from a pending saved choice. Focused source, native, signature, icon and portable checks pass. The owner confirmed the Build106 parking/highway scene stable; exact Build107 iPhone/Mac performance and graphical tests remain pending. No measured FPS, heat or physical SE2020 improvement is claimed.",
-  "last_confirmed_device_build": 88,
+  "device_acceptance": "ZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. Installer0.107-2 changes release metadata only and pins the exact same Build107 IPA as0.107-1. AppSync remains experimental.",
+  "last_confirmed_device_build": 107,
   "source_revision": "ad973f1beb1584c2cc9ea952c53bd979d8fee60a",
-  "public_2_0_release": "https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.2",
+  "public_2_0_release": "https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.3",
   "public_2_0_installation_guide": "https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md",
   "current_candidate_release": "https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107",
   "previous_owner_confirmed_archive_build": 91,
@@ -25,5 +25,9 @@
   "previous103_scene_result": "OWNER_REPORTED_UNRESOLVED_OR_WORSE",
   "previous104_scene_result": "OWNER_REPORTED_UNRESOLVED",
   "previous105_capture_result": "256 valid encoded samples, shadow/upload values match, zero CB copies; no cache eviction or budget clamp observed. Native/browser inline EndDraw cleanup bypass found independently; Owner confirmed the106targetscene stable on29October2026; exact107checks pending.",
-  "previous106_scene_result": "OWNER_CONFIRMED_TARGET_BUILDINGS_STABLE_2026-10-29; no general performance or Mac acceptance inferred."
+  "previous106_scene_result": "OWNER_CONFIRMED_TARGET_BUILDINGS_STABLE_2026-10-29; no general performance or Mac acceptance inferred.",
+  "owner_publication_approved": true,
+  "owner_publication_date": "2026-10-31",
+  "current_installer_version": "0.107-2",
+  "owner_confirmation": "downloads/zgta-v-build107-owner-confirmation.json"
 }

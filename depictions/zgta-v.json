@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**Build 107 candidate \u00b7 Installer 0.107-1**\n\nBuild 107 audits low-memory behavior while preserving the working Build106 rendering fix. Reduced memory bounds optional prefetch to four jobs/one speculative job and trims only completed idle GPU storage earlier; Standard and higher-memory settings are unchanged. Memory management stays independent of graphics presets, resolution and FPS. iOS Find Lobby icons and preset descriptions are corrected; simulator layouts were inspected on SE2020 and iPhone15Pro sizes. Performance reports distinguish the applied memory mode from a pending saved choice. Focused source, native, signature, icon and portable checks pass. The owner confirmed the Build106 parking/highway scene stable; exact Build107 iPhone/Mac performance and graphical tests remain pending. No measured FPS, heat or physical SE2020 improvement is claimed."
+          "markdown": "**2.0 beta 3 \u00b7 Build107 \u00b7 Installer0.107-2**\n\nZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. Installer0.107-2 changes release metadata only and pins the exact same Build107 IPA as0.107-1. AppSync remains experimental."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer0.107-2 / App Build107\nZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. Installer0.107-2 changes release metadata only and pins the exact same Build107 IPA as0.107-1. AppSync remains experimental.\n\nEarlier changelog entries retain their original verification status."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
