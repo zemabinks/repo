@@ -591,3 +591,44 @@ SHA1: 56ea6523057fec07b2a254efecb7142a0806d2fc
 SHA256: 048dd3c59448301cd7db8f288dad0f8b186406a5c386256560543bea04f6d799
 SHA512: 47c9036acbd2eca6719881995b343cea69fd5a258aa3775ac2082b67f0f3c587515eb9f447e42baef25bb360ddd42b60e6a8c3bea004be1689a4d20cd4769c92
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.107-2
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V 2.0 beta 3 Build107; owner-tested iPhone release
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.107-2_all.deb
+Size: 2968
+MD5sum: 9c1669976f19adbd3c88558251aeda24
+SHA1: 339c8f9864b30141ae42f52da70e3690992a683d
+SHA256: 18719cda78f0ee2799abe01d4c5b9a34360830e9d5e1adeca1a1cd13d1c11c69
+SHA512: 869e9b2258afc38a8c3cc103546f4b70a4e0d24b6fd289e9523b36edd852fd8afa064b5c63eff85ba05981ef68c5afc77f4e34a6b247da0228f21ed77bce9a9a
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA V (AppSync installer - experimental)
+Version: 0.107-2
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA V 2.0 beta 3 Build107; experimental AppSync installer
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_0.107-2_iphoneos-arm.deb
+Size: 2804
+MD5sum: c59a0625057288558dcbeb25c3f18454
+SHA1: d80561a1c5fc3da923a5360a552a54e5e7dff044
+SHA256: 0de2abcf46aaf833fe58116608b82dc5c90104d92764979fd37f12599dd5a245
+SHA512: 46d7e478966d36156eb8ccb69fa93f813ba17dad5075979f6c99c412f84b6ee21d361a8b0b8e1e5490361272b7d9b9a88e87d1d4bffbe8023faa2bcfa8cb350d
+
