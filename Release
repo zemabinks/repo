@@ -5,25 +5,25 @@ Codename: ios
 Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e all
 Components: main
-Date: Sat, 31 Oct 2026 15:58:33 GMT
+Date: Sat, 31 Oct 2026 17:30:28 GMT
 Description: Zema's iOS tweaks, apps and ports
 MD5Sum:
- ce90db69f2ab17ca3f6aca532f87f103            32935 Packages
- a187557967ecef8ca3911599050a889c             7084 Packages.gz
- ba5cb5cecdb4cc968e8f52c4b23e451a             6907 Packages.bz2
- 0927dd4ed45745e7d2484bf431951892             6280 Packages.xz
+ d9ef83f37c3dddaecc2378c124a2a3f5            33780 Packages
+ 56415a69c0c15adb520a843f3aeb3905             7289 Packages.gz
+ e44e368ae4b0282c41608baf20175063             7075 Packages.bz2
+ d4d2dd8e8d8cb439dad4a05afeaf8277             6456 Packages.xz
 SHA1:
- 7407097d6f226254bef999c6dc81b08c2d2b0385            32935 Packages
- 38cf913792902388f6a6bd140e9a16107d56e9ae             7084 Packages.gz
- 32d39e19970e13366a1ad07a6e2d23ef68bec47a             6907 Packages.bz2
- d5079ffced722e66e13564bc85c498d4815e2604             6280 Packages.xz
+ dd22eda2e8c0002115be786d15d34c20f73154d9            33780 Packages
+ cb8b71912b32e792903fd84b92cb9bac8fdc95b2             7289 Packages.gz
+ 4d4805c89a01425a4892df2838cfd064fae972df             7075 Packages.bz2
+ 2cf53e0802b378325e69fdb33d282463ef321719             6456 Packages.xz
 SHA256:
- 18934269aac050f25f70da17cb95583bb8c5b99c59fd25135ac73ef93075d474            32935 Packages
- 8f48f778f332678ecd8bfed11c337a1cf3ebdc461fc0211424a2cdb4584bd84e             7084 Packages.gz
- 6d3d05fdd57c891874badff01d8e1417d90a49161228f4fc9e164e368cc441b6             6907 Packages.bz2
- df0600414bc34f2af6e906146aa209708f6705ed6d3bc2e0ecafef40823810ef             6280 Packages.xz
+ 0822999634ad3dec9b7a7aa25429f483d9e504fcecd301538be51867ef52960c            33780 Packages
+ f55e012d04f204e715e66ba5b6b6c9948913d5204042e70816c7860632c672a6             7289 Packages.gz
+ c6ea2eeeaa0b7f3fde8ce7701a9e3521f249abd0b7ee2f3121ba018edc5a208c             7075 Packages.bz2
+ ada7f07960af58faedc4ae934dbeae7bf91bb22930b284111fc5423eb9c0d10d             6456 Packages.xz
 SHA512:
- b71d9f8e4b2e70f5550d8a41771eb3ddb91ade04170e6ca7928ff7a7ff75ccf79b8e644d09f31b794863c2765ae05e01603f8dc98bfc106d7e6a4d8671ee5b1e            32935 Packages
- 8741d9820d0b215f564615492977fd8c11a8b2e35fc2b43d85cf26b7b9c77ac79fa211b38253eeef01491d377c0ce02d8c6810cef2f5b83360e27a0d5f7f96d1             7084 Packages.gz
- fea1ba08d611be44e3e4a5270dc3078428c98bc829c0df549c8ef883e738ab8a6d58215aa2faf407401a0ad40d107416f5b55bb97aa59281b5bead3a046b01de             6907 Packages.bz2
- b68a7ad4040bbdb419b95b0822a55390949cb1048759f56815789f4931cfd11b8d0b9d61584270681f881cb937a624e7a630b2b148b31288fa25b689c2b119cc             6280 Packages.xz
+ 19ce82a8a8dea3cd0fb1a9e2304d5479d2bc4a125247977e0289de4f25f713807dce63f10c89d4a5926932d0146ec14a55cc5e9219d26467245a29f67df8b99c            33780 Packages
+ d94a3e866df8281688ab2c75edc14301c610037cc0755219bf0974f95f1e7569eca809e7babe121b835be1382edca301d0e11ccdbc7f052c3474d11d2f0c5aea             7289 Packages.gz
+ e0b661b973967945abc32f49bad249cffd159af822de09396942e38baeb2e8567934d86e82ef4cb38025c52f420b47ab515ee6a3ae8670bdfe8940a1d41509c1             7075 Packages.bz2
+ a30d83cfe98f3513970b07c0794c12113c79d4488b6caeaa8833b6df7d7329a171c73678afcb7bfe63caca064e9e0348fa11bc1f403444d3b584cfc320baa006             6456 Packages.xz

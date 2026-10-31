@@ -611,6 +611,26 @@ SHA1: 339c8f9864b30141ae42f52da70e3690992a683d
 SHA256: 18719cda78f0ee2799abe01d4c5b9a34360830e9d5e1adeca1a1cd13d1c11c69
 SHA512: 869e9b2258afc38a8c3cc103546f4b70a4e0d24b6fd289e9523b36edd852fd8afa064b5c63eff85ba05981ef68c5afc77f4e34a6b247da0228f21ed77bce9a9a
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA V (TrollStore installer)
+Version: 0.107-3
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA V Build107 with cleaner TrollStore installation output
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_0.107-3_all.deb
+Size: 3036
+MD5sum: c0d5bfecbf34d11ce6ed1526313711de
+SHA1: 2e210c0dc9e76b2fb92d3d6ee5d7eddb1613018e
+SHA256: 1b371d93061c220329a08a595ad4b6275e6bb067c72c853ced90c31b9d4be3f6
+SHA512: ebbc3daf609efa561406e15a4667259476226474b02d619031836cca61a05bdb74571220525056c0d1b571ad8e7af840f3253a4b2a2208fcad88ab8a7225a71a
+
 Package: com.zema.zgta-v.appsync
 Name: ZGTA V (AppSync installer - experimental)
 Version: 0.107-2

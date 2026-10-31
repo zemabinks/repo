@@ -8,7 +8,7 @@
 
 1. Make sure compatible TrollStore / TrollStore Lite is already installed. The app's iOS minimum does not mean TrollStore supports every later iOS version.
 2. In Sileo → Sources, add `https://zemabinks.github.io/repo/` and refresh.
-3. Install **ZGTA V (TrollStore installer)**, version **0.107-2**.
+3. Install **ZGTA V (TrollStore installer)**, version **0.107-3**.
 4. Open **ZGTA V → Game files** and choose your prepared folder or archive. Follow the [game-file instructions](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md#required-game-folder).
 
 To update, install over the existing app. Do not delete the app or its data first. Removing the small Sileo package leaves ZGTA V installed.
@@ -38,6 +38,10 @@ Follow [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/mai
 
 ## Downloads and support
 
-[Build 107](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107) contains the current owner-approved beta 3 IPA, installers and checksums. ZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. Installer0.107-2 changes release metadata only and pins the exact same Build107 IPA as0.107-2. AppSync remains experimental. Updating through either installer preserves existing app data.
+[Build 107](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107) contains the current owner-approved beta 3 IPA, installers and checksums. ZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. TrollStore installer 0.107-3 summarizes successful helper output and retains full failure diagnostics while installing the same Build 107 IPA. AppSync remains experimental. Updating through either installer preserves existing app data.
 
 If installation fails, share the exact Sileo error. For an in-app problem, use **Settings → Saves & support → Share log**. Review personal paths and addresses before posting; do not upload game files or private saves.
+
+## Installer0.107-3
+
+TrollStore installer0.107-3 shows concise progress on successful installation and retains full helper output on failure. The owner confirmed clean installation, GTA relaunch and existing data on the RootHide setup. It installs the same Build107 app. AppSync remains0.107-2 and experimental. Unrelated package warnings are unaffected.
