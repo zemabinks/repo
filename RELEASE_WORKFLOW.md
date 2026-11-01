@@ -27,3 +27,9 @@ The owner requested “always upload the IPA when updated to my repo” and expl
 5. Read back the live catalogs, signed indexes, packages and actual IPA bytes. Report the advertised installer version and remaining device checks.
 
 Use existing keys and credentials. Never export private keys or infer physical installation/gameplay from fixtures. No paid hosted runner, billing change or new service is required.
+
+## Version naming — 1 November 2026
+
+Current product: ZGTA 5 —1.1 beta1; Sileo `1.1~beta1`. See
+`docs/zgta-versioning.md`. No Debian revision suffixes. Preserve old packages
+and receipts; naming approval does not approve a future UI/gameplay candidate.

@@ -10,19 +10,19 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — 2.0 beta 4 · Build 109
+### ZGTA 5 — 1.1 beta 1 · Build 109
 
 By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
 Requires **iOS / iPadOS 15.0+**, your own matching game files and a compatible installation method.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-109/ZGTA-V-Build109-VoiceDistance-TrollStore.ipa) · [Other platforms and update notes](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.4) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-109/ZGTA-V-Build109-VoiceDistance-TrollStore.ipa) · [Other platforms and update notes](https://github.com/zemabinks/ZGTA-V/releases/tag/v1.1-beta.1) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md)
 
-In Sileo, refresh this source and install **ZGTA V (TrollStore installer) 0.109-2** with your existing compatible TrollStore. Keep the app and its data installed when updating. Removing the small installer package leaves GTA and its data installed.
+In Sileo, refresh this source and install **ZGTA 5 (TrollStore installer) 1.1~beta1** with your existing compatible TrollStore. Keep the app and its data installed when updating. Removing the small installer package leaves GTA and its data installed.
 
-ZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested.
+ZGTA 5 — 1.1 beta 1 is a naming-only update of the owner-tested Build 109 release. Speech in both directions, smooth distance reduction/range silence/return, microphone mute and existing data passed the owner’s iPhone/Mac checks. Those installation checks used the legacy private 0.109-1 wrapper. The new 1.1~beta1 metadata wrapper has not been separately phone-tested; installer methods and the exact tested IPA are unchanged. AppSync installation, Bluetooth/interruption handling, simultaneous speakerphone echo and Windows/Android/Linux/Apple Silicon execution remain untested. No new 3 GB device performance claim is made.
 
-AppSync 0.109-2 is experimental for compatible ARM64 rootful jailbreaks on iOS15.0–18.2, not RootHide/rootless. Other sideloading routes are untested; see [installation options](docs/zgta-v-installation.md).
+AppSync 1.1~beta1 is experimental for compatible ARM64 rootful jailbreaks on iOS15.0–18.2, not RootHide/rootless. Other sideloading routes are untested; see [installation options](docs/zgta-v-installation.md).
 
 [Download metadata](downloads/zgta-v.json) · [Installers and checksums](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-109)
 

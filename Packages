@@ -693,3 +693,44 @@ SHA1: f010335655c96bf7d9ca910f3be22e1b6d712b8d
 SHA256: a6f5b6c6ca289f2648776f38369592dc28964913ad2f50774a92d1418dacd9c3
 SHA512: 236eeed2fa8f99f622b1c6e314aa60786bc31780d32bf7cf49630298223f1f8d75ec7a9622dfbb60d580b5ce511258bea62b1fb67167806173483d3e1b314d6a
 
+Package: com.zema.zgta-v.trollstore
+Name: ZGTA 5 (TrollStore installer)
+Version: 1.1~beta1
+Architecture: all
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), curl, coreutils
+Description: ZGTA 5 1.1 beta 1; TrollStore installer for the unchanged owner-tested app
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.trollstore_1.1~beta1_all.deb
+Size: 3080
+MD5sum: 025e363615381e9b9b32295781187afe
+SHA1: fa4bd91859bc5e369d28143a5dfbab52cf831233
+SHA256: 2fede428edf60cea2bcf4a1fe40a91d283e063dfcd8e01d2bd03f2b35c443022
+SHA512: 29507fb95332cbcf41795fb5c0c424ccc460c9120668d99a424d7248333b1dc22fd54615f627c200017682da7c853bc06bc7b838c44e2cec01ddd6739ae312e1
+
+Package: com.zema.zgta-v.appsync
+Name: ZGTA 5 (AppSync installer - experimental)
+Version: 1.1~beta1
+Architecture: iphoneos-arm
+Section: Applications
+Maintainer: ZEMA
+Author: zema
+Depends: firmware (>= 15.0), firmware (<= 18.2), curl, coreutils, ai.akemi.appsyncunified (>= 116.0), ai.akemi.appinst (>= 2.1.1)
+Conflicts: com.zema.zgta-v.trollstore
+Description: ZGTA 5 1.1 beta 1; experimental AppSync installer for the unchanged app
+Icon: https://zemabinks.github.io/repo/assets/zgta-v.png
+SileoDepiction: https://zemabinks.github.io/repo/depictions/zgta-v-appsync.json
+Homepage: https://zemabinks.github.io/repo/#zgta-v
+Installed-Size: 0
+Filename: ./pool/com.zema.zgta-v.appsync_1.1~beta1_iphoneos-arm.deb
+Size: 2800
+MD5sum: 3b7db1ec9c9f7674bfdfb71d8ae3d555
+SHA1: 7999098a82b6789ef2541ea39f494b872224b622
+SHA256: dbec15bf1c77207b67bc0657c028f642e0a8e205f0bde035d4c2130cd4bdb27a
+SHA512: 7bd7ef94deeca53249af65f0af2d0bdcc78042287e3e125dae18336d4363eabeec0087333d42d0e299c0880651ae58afa883993a4cb8191d02456845479ab388
+
