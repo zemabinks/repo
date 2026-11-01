@@ -33,3 +33,7 @@ Use existing keys and credentials. Never export private keys or infer physical i
 Current product: ZGTA 5 —1.1 beta1; Sileo `1.1~beta1`. See
 `docs/zgta-versioning.md`. No Debian revision suffixes. Preserve old packages
 and receipts; naming approval does not approve a future UI/gameplay candidate.
+
+## Sileo depiction checks — 1 November 2026
+
+Edit each Details block by its purpose; never replace every Markdown value with one release summary. Check that Details paragraphs are unique and the first Changelog heading matches the current iOS product version in downloads/zgta-v.json. Keep installer/build identifiers in a clearly labeled historical archive, distinct from current 1.x product versions. Browser-only releases do not become iOS changelog entries. Read back both live depiction URLs after publication; depiction-only corrections do not rebuild the app or signed package indexes.
