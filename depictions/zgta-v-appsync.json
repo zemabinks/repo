@@ -10,17 +10,17 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "## ZGTA V \u2014 AppSync installer\n\n**2.0 beta \u00b7 by zema \u00b7 experimental**\n\nFor compatible **ARM64 rootful jailbreaks on iOS 15.0\u201318.2**. Not for RootHide or rootless. Own prepared game files required.\n\nAdd `https://cydia.akemi.ai/` in Sileo for **AppSync Unified 116.0+** and **appinst 2.1.1+**. Install with a compatible jailbreak active. Dependency availability and ZGTA V installation/gameplay through AppSync remain unverified.\n\nUse the separate TrollStore installer if you already use compatible TrollStore. Removing this installer leaves the app/data installed.\n\n[Installation and compatibility](https://github.com/zemabinks/repo/blob/main/docs/zgta-v-installation.md) \u00b7 [Other sideloaders](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md)"
+          "markdown": "ZGTA 5 \u2014 1.1 beta 1 is a naming-only update of the owner-tested Build 109 release. Speech in both directions, smooth distance reduction/range silence/return, microphone mute and existing data passed the owner\u2019s iPhone/Mac checks. Those installation checks used the legacy private 0.109-1 wrapper. The new 1.1~beta1 metadata wrapper has not been separately phone-tested; installer methods and the exact tested IPA are unchanged. AppSync installation, Bluetooth/interruption handling, simultaneous speakerphone echo and Windows/Android/Linux/Apple Silicon execution remain untested. No new 3 GB device performance claim is made."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**2.0 beta 4 \u00b7 Build 109 \u00b7 Installer 0.109-2**\n\nZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested."
+          "markdown": "ZGTA 5 \u2014 1.1 beta 1 is a naming-only update of the owner-tested Build 109 release. Speech in both directions, smooth distance reduction/range silence/return, microphone mute and existing data passed the owner\u2019s iPhone/Mac checks. Those installation checks used the legacy private 0.109-1 wrapper. The new 1.1~beta1 metadata wrapper has not been separately phone-tested; installer methods and the exact tested IPA are unchanged. AppSync installation, Bluetooth/interruption handling, simultaneous speakerphone echo and Windows/Android/Linux/Apple Silicon execution remain untested. No new 3 GB device performance claim is made."
         },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "[Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md) \u2014 downloads, setup, host and join steps."
+          "markdown": "ZGTA 5 \u2014 1.1 beta 1 is a naming-only update of the owner-tested Build 109 release. Speech in both directions, smooth distance reduction/range silence/return, microphone mute and existing data passed the owner\u2019s iPhone/Mac checks. Those installation checks used the legacy private 0.109-1 wrapper. The new 1.1~beta1 metadata wrapper has not been separately phone-tested; installer methods and the exact tested IPA are unchanged. AppSync installation, Bluetooth/interruption handling, simultaneous speakerphone echo and Windows/Android/Linux/Apple Silicon execution remain untested. No new 3 GB device performance claim is made."
         }
       ]
     },
