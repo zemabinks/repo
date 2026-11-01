@@ -14,7 +14,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**2.0 beta3 \u00b7 App107 \u00b7 TrollStore installer0.107-3**\n\nTrollStore installer0.107-3 shows concise progress on successful installation and retains full helper output on failure. The owner confirmed clean installation, GTA relaunch and existing data on the RootHide setup. It installs the same Build107 app. AppSync remains0.107-2 and experimental."
+          "markdown": "**2.0 beta 4 \u00b7 Build 109 \u00b7 Installer 0.109-2**\n\nZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested."
         },
         {
           "class": "DepictionMarkdownView",
@@ -37,6 +37,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.109-2 / App Build 109\nZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested.\n\nEarlier entries retain their historical meaning."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,

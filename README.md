@@ -10,21 +10,21 @@ Current package size: 12,092 bytes. SHA-256: `c2d14fea1cb4919fc6b40a57c58b084a4e
 
 ## App downloads
 
-### ZGTA V — 2.0 beta 3 · Build 107
+### ZGTA V — 2.0 beta 4 · Build 109
 
 By **zema**. Solo Story, Free Roam and Private Multiplayer.
 
-**Requires iOS / iPadOS 15.0 or later** and your own matching prepared game files. TrollStore / TrollStore Lite must support your exact device and iOS version.
+Requires **iOS / iPadOS 15.0+**, your own matching game files and a compatible installation method.
 
-[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-107/ZGTA-V-Build107-Memory-UI-Audit-TrollStore.ipa) · [Other platform downloads](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.3) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [Mods, graphics & multiplayer](https://github.com/zemabinks/ZGTA-V/blob/main/docs/PLAY-GUIDE.md) · [Remote play with Tailscale](https://github.com/zemabinks/ZGTA-V/blob/main/docs/REMOTE-PLAY.md)
+[Download IPA](https://github.com/zemabinks/repo/releases/download/zgta-v-build-109/ZGTA-V-Build109-VoiceDistance-TrollStore.ipa) · [Other platforms and update notes](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.4) · [Installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md)
 
-In Sileo, refresh this source and install **ZGTA V (TrollStore installer)**, version **0.107-3**, with existing compatible TrollStore. Keep the app installed when updating. Removing the installer package leaves the app and data in place.
+In Sileo, refresh this source and install **ZGTA V (TrollStore installer) 0.109-2** with your existing compatible TrollStore. Keep the app and its data installed when updating. Removing the small installer package leaves GTA and its data installed.
 
-[Sideloadly and AltStore Classic](https://github.com/zemabinks/ZGTA-V/blob/main/docs/IOS-SIDELOADING.md) can be tried with the same IPA; ZGTA V has not been tested through them. The separate AppSync0.107-2 package is an untested option for compatible ARM64 rootful jailbreaks on iOS 15.0–18.2, not RootHide/rootless. See [Sileo installation](docs/zgta-v-installation.md).
+ZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested.
 
-[Download metadata](downloads/zgta-v.json) · [Checksums and verification](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-107)
+AppSync 0.109-2 is experimental for compatible ARM64 rootful jailbreaks on iOS15.0–18.2, not RootHide/rootless. Other sideloading routes are untested; see [installation options](docs/zgta-v-installation.md).
 
-ZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. TrollStore installer 0.107-3 summarizes successful helper output and retains full failure diagnostics while installing the same Build 107 IPA. AppSync remains experimental.
+[Download metadata](downloads/zgta-v.json) · [Installers and checksums](https://github.com/zemabinks/repo/releases/tag/zgta-v-build-109)
 
 ## GitHub Releases
 

@@ -1,3 +1,13 @@
+# ZGTA V beta 4 / Build 109 in Sileo
+
+Add `https://zemabinks.github.io/repo/`, refresh, and install **ZGTA V (TrollStore installer) 0.109-2** through your existing compatible TrollStore. Keep the existing app and game data. The package verifies the exact IPA size and SHA-256 and updates the same application identity. It does not install TrollStore.
+
+ZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested.
+
+[Current installation guide](https://github.com/zemabinks/ZGTA-V/blob/main/docs/START-HERE.md) · [All platform downloads](https://github.com/zemabinks/ZGTA-V/releases/tag/v2.0.0-beta.4)
+
+## Historical installer notes
+
 # Install ZGTA V with Sileo
 
 **Requires iOS / iPadOS 15.0 or later**, a compatible installation method and your own matching prepared game files.

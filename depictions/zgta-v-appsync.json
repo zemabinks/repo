@@ -15,7 +15,7 @@
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
-          "markdown": "**2.0 beta 3 \u00b7 Build107 \u00b7 Installer0.107-2**\n\nZGTA V 2.0 beta 3 / Build107 preserves the corrected building rendering and separates Automatic, Standard and Reduced memory management from graphics presets, resolution and FPS. The owner confirmed Build107 graphics, launched Mac DMG107.1, connected Mac/iPhone, and confirmed automatic empty-room discovery on both after the relay1.1 update. The iPhone performance report is a hot driving run, not a measured speedup. Physical3GB/A13 gains remain unmeasured; Windows/Android/Linux and AppleSilicon execution remain untested. Installer0.107-2 changes release metadata only and pins the exact same Build107 IPA as0.107-1. AppSync remains experimental."
+          "markdown": "**2.0 beta 4 \u00b7 Build 109 \u00b7 Installer 0.109-2**\n\nZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested."
         },
         {
           "class": "DepictionMarkdownView",
@@ -28,6 +28,11 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "useSpacing": true,
+          "markdown": "### Installer 0.109-2 / App Build 109\nZGTA V 2.0 beta 4 / Build 109 adds proximity voice between iPhone and browser players using the existing microphone and speaker controls. Voices get progressively quieter with distance and are silent beyond 35 metres, with smooth changes while moving. The owner confirmed installation/data, speech both ways, distance reduction/range silence/return and microphone mute on iPhone and Mac. Stable installer 0.109-2 delivers that unchanged tested IPA from the public release; its public metadata wrapper was not separately phone-tested. AppSync remains experimental and not device-tested. Bluetooth/interruption routes, Windows/Android/Linux and Apple Silicon execution remain untested.\n\nEarlier entries retain their historical meaning."
+        },
         {
           "class": "DepictionMarkdownView",
           "useSpacing": true,
